@@ -1,0 +1,14 @@
+**********************************************************************
+This is a README file for project Eternity Service. The source code 
+for Eternity Service project can be freely distributed under the GNU
+licence.
+
+(c) EternitySociety :-)
+**********************************************************************
+
+...here can be local information about files in current directory etc.
+
+keys.h         - definition of key types
+message.h      - structure of messages being sent between mixes
+messageQueue.h - A queue that can hold messages - used for passing
+                 messages between threads

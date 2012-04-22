@@ -1,0 +1,17 @@
+cd ./../../../Common/Debugable
+gmake
+
+cd ./../LogFile
+gmake
+
+cd ./../GMessage
+gmake
+
+cd ./../Payments
+gmake
+
+cd ./../Utils
+gmake
+
+cd ./../../Bank/PayManager
+gmake

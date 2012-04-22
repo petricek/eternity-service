@@ -1,0 +1,15 @@
+CXXFLAGS= -g -Wall
+
+prepSaveFile.o: prepSaveFile.cc
+	g++ -g -Wall -o prepSaveFile.o -c prepSaveFile.cc
+	g++ -g -Wall -o prepSaveFile prepSaveFile.o \
+	../*.cc \
+	../../../Common/Cipherer/*.cc \
+	../../../Common/LogFile/*.cc \
+	../../../Common/Debugable/*.cc \
+	../../../Common/GMessage/*.cc \
+	../../../Common/RandomGenerator/*.cc \
+	../../../Common/RSAEuro/librsaeuro.a
+
+clean:
+	rm prepSaveFile.o

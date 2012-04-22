@@ -1,0 +1,12 @@
+CXXFLAGS= -g -Wall
+
+genTCBKeys: genTCBKeys.o
+	g++ -g -Wall -o genTCBKeys genTCBKeys.o \
+	../../../Common/Cipherer/*.cc \
+	../../../Common/LogFile/*.cc \
+	../../../Common/Debugable/*.cc \
+	../../../Common/GMessage/*.cc \
+	../../../Common/RSAEuro/librsaeuro.a
+
+clean:
+	rm genTCBKeys.o

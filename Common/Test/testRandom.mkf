@@ -1,0 +1,19 @@
+CXXFLAGS= -g -Wall
+
+testRandom: testRandom.o 
+	g++ -g -Wall -o testRandom testRandom.o \
+	../GMessage/file.o \
+	../GMessage/fields.o \
+	../GMessage/fieldQueue.o \
+	../GMessage/queue.o \
+	../GMessage/myString.o \
+	../GMessage/msgField.o \
+	../GMessage/gMessage.o \
+	../GMessage/estime.o \
+	../LogFile/logFile.o \
+	../Debugable/debugable.o \
+	../RSAEuro/librsaeuro.a \
+	../RandomGenerator/randomGenerator.o
+
+clean:
+	rm testGMessage.o

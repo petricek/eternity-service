@@ -1,0 +1,1 @@
+gmake -f testGMessage.mkf

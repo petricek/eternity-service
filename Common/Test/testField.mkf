@@ -1,0 +1,18 @@
+CXXFLAGS= -g -Wall
+
+testField: testField.o
+	g++ -g -Wall -o testField testField.o \
+	../GMessage/file.o \
+	../GMessage/fields.o \
+	../GMessage/fieldQueue.o \
+	../GMessage/queue.o \
+	../GMessage/myString.o \
+	../GMessage/msgField.o \
+	../GMessage/gMessage.o \
+	../LogFile/logFile.o \
+	../Debugable/debugable.o \
+	../GMessage/estime.o \
+	../RSAEuro/librsaeuro.a
+
+clean:
+	rm testField.o

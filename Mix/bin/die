@@ -1,0 +1,3 @@
+srv=`ps -ax | grep "./mix" | grep -v grep`
+echo $srv
+kill -9 `echo $srv | cut -f 1 -d" "`

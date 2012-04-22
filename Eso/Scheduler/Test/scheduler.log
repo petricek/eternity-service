@@ -1,0 +1,13 @@
+============================================================================
+[Fri Feb 26 18:39:46 1999]:Warning:Log session started
+[Fri Feb 26 18:39:46 1999]:_:Ins c: test1, t: Fri Feb 26 17:40:06 1999
+[Fri Feb 26 18:39:46 1999]:_:Ins c: test3, t: Fri Feb 26 17:40:16 1999
+[Fri Feb 26 18:39:46 1999]:_:Ins c: test2, t: Fri Feb 26 17:39:46 1999
+[Fri Feb 26 18:39:46 1999]:_:Table::~Table(Sched_table.tx)
+[Fri Feb 26 18:40:08 1999]:_:Del command: test1, time: Fri Feb 26 17:40:08 1999
+[Fri Feb 26 18:40:28 1999]:_:Del command: test3, time: Fri Feb 26 17:40:28 1999
+[Fri Feb 26 18:40:29 1999]:_:Del command: test2, time: Fri Feb 26 17:40:29 1999
+[Fri Feb 26 18:40:49 1999]:_:GMessage contains:: [check: 53740]
+[Fri Feb 26 18:40:49 1999]:_:  1) Command :[6] [check: 72911] [sum: 497] test1.
+[Fri Feb 26 18:40:49 1999]:Log session finished
+============================================================================

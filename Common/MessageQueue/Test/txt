@@ -1,0 +1,5 @@
+cc: testQueue.c: No such file or directory
+cc: ../../../Common/semaphore.cc: No such file or directory
+cc: ../messageQueue.cc: No such file or directory
+cc: ../message.cc: No such file or directory
+cc: ../../../Common/logFile.cc: No such file or directory

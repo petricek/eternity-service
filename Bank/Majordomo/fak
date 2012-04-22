@@ -1,0 +1,4 @@
+for i in *.cc
+do
+  mv $i bank`echo $i | cut -c1 | tr a-z A-Z``echo $i | cut -c2-`
+done

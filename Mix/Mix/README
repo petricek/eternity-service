@@ -1,0 +1,40 @@
+**********************************************************************
+This is a README file for project Eternity Service. The source code 
+for Eternity Service project can be freely distributed under the GNU
+licence.
+
+(c) EternitySociety :-)
+**********************************************************************
+
+...here can be local information about files in current directory etc.
+
+----------------------------------------------------------------------------
+Myslenka za RunningObjects je ta, ze jednotliva vlakna, jak jsme je
+  vymysleli, nemusi nutne byt vlakny. Mohou to byt normalni procesy,
+  zmenila by se pak implementace fronty (vyuzivala by sdilene pameti) a
+  jinak by vse bezelo stejne.
+
+Objekt Mix ma tridu RunningObjects, kde ma vsechny informace o vsech 
+  ,,zivych'' (,,dynamickych'') objektech.
+
+Hlavni akce je to, ze se zavola Mix->Run(), tak postupne vola metodu
+  RunningObjects->SaveRunningObjectID() pro jednotlive cisla objektu
+  (#defines). Samotne ID je ted pthread_t, ale mohlo by to byt cislo
+  procesu apod. To ID vraci metody typu ReceiverRun() apod. Tedy v
+  ReceiverRun() se ted vola fce pthread_create(), ale v Minixu se tam
+  bude volat fork().
+
+Po vytvoreni dynamickych objektu (lepsi nazev nez ,,vlakna'') uz Mix
+  udela jen jednu vec - zacne na tyto objekty cekat. Ceka se podle jmena,
+  v RunningObjects tride se podle jmena vyhleda skutecne ID a pouzije se.
+  My tam tedy pouzijeme pthread_join().
+
+Pechy, 21.11.1998
+----------------------------------------------------------------------------
+Pokud se budou pridavat vlakna, je nutne udelat wrappery v
+  mixThreadAxlr.cc, nadefinovat nove defines, udelat metody typu
+  NonameRun() a apod.
+
+Pechy, 21.11.1998
+----------------------------------------------------------------------------
+

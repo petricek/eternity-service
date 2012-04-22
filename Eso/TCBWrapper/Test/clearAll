@@ -1,0 +1,1 @@
+rm *.tab *.log *.key* Storage/* Temp/* *.tgm

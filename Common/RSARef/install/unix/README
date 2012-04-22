@@ -1,0 +1,12 @@
+V tomto adresari jsou soubory rsaeurolib.a.2.2.8 a rsaeurolib.a.mail,
+ktere je nutno zkopirovat vzdy do rsaeurolib.a podle toho, ktery system
+pouzivate (2.2.8 == 2.2.x).
+
+Ve skutecnosti to uz neni rsaeuro, ale rsaref 2.0, kvuli chybam v rsaeuro.
+Proste mi to neslo s euro, hrabal jsem se i ve zdrojacich, podle me to 
+je chyba euro a ne moje, rsaref je alespon odzkousena (urcite..)
+
+Do rsaref jsem pridal jednu funkci z rsaeuro, kvuli snadnejsimu pouzivani,
+menil jsem tam i dalsi veci - makra apod, vsechny sekce jsou oznaceni slovem
+``Pechy'', takze je mozne dat treba "grep -a -e Pechy *.*" na nalezeni tech
+sekci.

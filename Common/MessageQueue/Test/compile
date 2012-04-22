@@ -1,0 +1,4 @@
+rm fak
+rm mix.log
+g++ -g -Wall -o queueTest testQueue.cc ../../../Common/semaphore.cc ../messageQueue.cc ../message.cc ../../../Common/logFile.cc -lc_r
+

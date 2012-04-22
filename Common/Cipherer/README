@@ -1,0 +1,20 @@
+**********************************************************************
+This is a README file for project Eternity Service. The source code 
+for Eternity Service project can be freely distributed under the GNU
+licence.
+
+(c) EternitySociety :-)
+**********************************************************************
+
+Melo by se to pak nekde projit a dodelat to, aby se pred returnem kvuli
+chybe deletovalo to, co by se jinak deletovalo. Aby to nezustavalo v 
+pameti.
+
+Pechy, 29.1.1999
+----------------------------------------------------------------------
+
+Tato zaloha obsahuje sealing.cc udelany pomoci PEM fci, ale nefungoval.
+Zkusim vzit kod z rdemo.c a uvidime.
+
+Pechy, 29.1.1999
+----------------------------------------------------------------------

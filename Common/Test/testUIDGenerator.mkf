@@ -1,0 +1,19 @@
+CXXFLAGS= -g -Wall
+
+testUIDGenerator: testUIDGenerator.o
+	g++ -g -Wall -o testUIDGenerator testUIDGenerator.o \
+	../GMessage/file.o \
+	../GMessage/fields.o \
+	../GMessage/fieldQueue.o \
+	../GMessage/queue.o \
+	../GMessage/myString.o \
+	../GMessage/record.o \
+	../GMessage/table.o \
+	../LogFile/logFile.o \
+	../Debugable/debugable.o \
+	../GMessage/estime.o \
+	../../Eso/UidGenerator/uidGenerator.o \
+	../RSAEuro/librsaeuro.a
+
+clean:
+	rm testUIDGenerator.o

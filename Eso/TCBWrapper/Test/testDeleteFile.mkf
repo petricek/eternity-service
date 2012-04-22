@@ -1,0 +1,14 @@
+CXXFLAGS= -g -Wall
+
+testDeleteFile: testDeleteFile.o ../tcbWrapperAll.o
+	g++ -g -Wall -o testDeleteFile testDeleteFile.o \
+	../*.cc \
+	../../../Common/Cipherer/*.cc \
+	../../../Common/LogFile/*.cc \
+	../../../Common/Debugable/*.cc \
+	../../../Common/GMessage/*.cc \
+	../../../Common/RandomGenerator/*.cc \
+	../../../Common/RSAEuro/librsaeuro.a
+
+clean:
+	rm testDeleteFile.o

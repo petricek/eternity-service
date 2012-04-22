@@ -1,0 +1,1131 @@
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+============================ Eternity Service ==============================
+========================= Student Project, MFF UK ==========================
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+cd ./Mix; gmake -j 1
+gmake[1]: Entering directory `/home/eternity/public_html/Source/Mix'
+----------------------------------------------------------------------------
+======================== I am working on Mix now... ========================
+----------------------------------------------------------------------------
+
+cd ./AddressManager; gmake -j 1 
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Mix/AddressManager'
+gmake[2]: Nothing to be done for `objects'.
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Mix/AddressManager'
+cd ./Chopper; gmake -j 1 
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Mix/Chopper'
+gmake[2]: Nothing to be done for `objects'.
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Mix/Chopper'
+cd ./Linker; gmake -j 1 
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Mix/Linker'
+../../makefile.body:39: Depend/linker.d: No such file or directory
+/bin/sh -ec 'cc -M linker.cc | sed "s!linker.o!& Depend/linker.d!g" > Depend/linker.d'
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Mix/Linker'
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Mix/Linker'
+g++ -Wall -I/usr/include/g++    -c linker.cc -o linker.o
+----------------------------------------------------------------------------
+....I am working on linking files with BASE_NAME linker
+----------------------------------------------------------------------------
+ld -o linkerAll.o -r linker.o; chmod a-x linkerAll.o
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Mix/Linker'
+cd ./Majordomo; gmake -j 1 
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Mix/Majordomo'
+../../makefile.body:39: Depend/majordomo.d: No such file or directory
+../../makefile.body:39: Depend/commands.d: No such file or directory
+/bin/sh -ec 'cc -M commands.cc | sed "s!commands.o!& Depend/commands.d!g" > Depend/commands.d'
+/bin/sh -ec 'cc -M majordomo.cc | sed "s!majordomo.o!& Depend/majordomo.d!g" > Depend/majordomo.d'
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Mix/Majordomo'
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Mix/Majordomo'
+g++ -Wall -I/usr/include/g++    -c majordomo.cc -o majordomo.o
+g++ -Wall -I/usr/include/g++    -c commands.cc -o commands.o
+----------------------------------------------------------------------------
+....I am working on linking files with BASE_NAME majordomo
+----------------------------------------------------------------------------
+ld -o majordomoAll.o -r majordomo.o commands.o; chmod a-x majordomoAll.o
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Mix/Majordomo'
+cd ./MessageCreator; gmake -j 1 
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Mix/MessageCreator'
+../../makefile.body:39: Depend/messageCreator.d: No such file or directory
+../../makefile.body:39: Depend/auxiliaryMethods.d: No such file or directory
+../../makefile.body:39: Depend/returnSomething.d: No such file or directory
+../../makefile.body:39: Depend/onionHacking.d: No such file or directory
+/bin/sh -ec 'cc -M onionHacking.cc | sed "s!onionHacking.o!& Depend/onionHacking.d!g" > Depend/onionHacking.d'
+/bin/sh -ec 'cc -M returnSomething.cc | sed "s!returnSomething.o!& Depend/returnSomething.d!g" > Depend/returnSomething.d'
+/bin/sh -ec 'cc -M auxiliaryMethods.cc | sed "s!auxiliaryMethods.o!& Depend/auxiliaryMethods.d!g" > Depend/auxiliaryMethods.d'
+/bin/sh -ec 'cc -M messageCreator.cc | sed "s!messageCreator.o!& Depend/messageCreator.d!g" > Depend/messageCreator.d'
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Mix/MessageCreator'
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Mix/MessageCreator'
+g++ -Wall -I/usr/include/g++    -c messageCreator.cc -o messageCreator.o
+g++ -Wall -I/usr/include/g++    -c auxiliaryMethods.cc -o auxiliaryMethods.o
+g++ -Wall -I/usr/include/g++    -c returnSomething.cc -o returnSomething.o
+g++ -Wall -I/usr/include/g++    -c onionHacking.cc -o onionHacking.o
+----------------------------------------------------------------------------
+....I am working on linking files with BASE_NAME messageCreator
+----------------------------------------------------------------------------
+ld -o messageCreatorAll.o -r messageCreator.o auxiliaryMethods.o returnSomething.o onionHacking.o; chmod a-x messageCreatorAll.o
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Mix/MessageCreator'
+cd ./Mix; gmake -j 1 
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Mix/Mix'
+../../makefile.body:39: Depend/mix.d: No such file or directory
+/bin/sh -ec 'cc -M mix.cc | sed "s!mix.o!& Depend/mix.d!g" > Depend/mix.d'
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Mix/Mix'
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Mix/Mix'
+g++ -Wall -I/usr/include/g++    -c mix.cc -o mix.o
+----------------------------------------------------------------------------
+....I am working on linking files with BASE_NAME mix
+----------------------------------------------------------------------------
+ld -o mixAll.o -r mix.o; chmod a-x mixAll.o
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Mix/Mix'
+cd ./MixOffspring; gmake -j 1 
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Mix/MixOffspring'
+../../makefile.body:39: Depend/mixOffspring.d: No such file or directory
+/bin/sh -ec 'cc -M mixOffspring.cc | sed "s!mixOffspring.o!& Depend/mixOffspring.d!g" > Depend/mixOffspring.d'
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Mix/MixOffspring'
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Mix/MixOffspring'
+g++ -Wall -I/usr/include/g++    -c mixOffspring.cc -o mixOffspring.o
+----------------------------------------------------------------------------
+....I am working on linking files with BASE_NAME mixOffspring
+----------------------------------------------------------------------------
+ld -o mixOffspringAll.o -r mixOffspring.o; chmod a-x mixOffspringAll.o
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Mix/MixOffspring'
+cd ./Padder; gmake -j 1 
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Mix/Padder'
+../../makefile.body:39: Depend/padder.d: No such file or directory
+/bin/sh -ec 'cc -M padder.cc | sed "s!padder.o!& Depend/padder.d!g" > Depend/padder.d'
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Mix/Padder'
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Mix/Padder'
+g++ -Wall -I/usr/include/g++    -c padder.cc -o padder.o
+----------------------------------------------------------------------------
+....I am working on linking files with BASE_NAME padder
+----------------------------------------------------------------------------
+ld -o padderAll.o -r padder.o; chmod a-x padderAll.o
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Mix/Padder'
+cd ./PaddingGenerator; gmake -j 1 
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Mix/PaddingGenerator'
+../../makefile.body:39: Depend/paddingGenerator.d: No such file or directory
+/bin/sh -ec 'cc -M paddingGenerator.cc | sed "s!paddingGenerator.o!& Depend/paddingGenerator.d!g" > Depend/paddingGenerator.d'
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Mix/PaddingGenerator'
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Mix/PaddingGenerator'
+g++ -Wall -I/usr/include/g++    -c paddingGenerator.cc -o paddingGenerator.o
+----------------------------------------------------------------------------
+....I am working on linking files with BASE_NAME paddingGenerator
+----------------------------------------------------------------------------
+ld -o paddingGeneratorAll.o -r paddingGenerator.o; chmod a-x paddingGeneratorAll.o
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Mix/PaddingGenerator'
+cd ./Translator; gmake -j 1 
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Mix/Translator'
+../../makefile.body:39: Depend/translator.d: No such file or directory
+../../makefile.body:39: Depend/auxiliaryMethods.d: No such file or directory
+/bin/sh -ec 'cc -M auxiliaryMethods.cc | sed "s!auxiliaryMethods.o!& Depend/auxiliaryMethods.d!g" > Depend/auxiliaryMethods.d'
+/bin/sh -ec 'cc -M translator.cc | sed "s!translator.o!& Depend/translator.d!g" > Depend/translator.d'
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Mix/Translator'
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Mix/Translator'
+g++ -Wall -I/usr/include/g++    -c translator.cc -o translator.o
+g++ -Wall -I/usr/include/g++    -c auxiliaryMethods.cc -o auxiliaryMethods.o
+----------------------------------------------------------------------------
+....I am working on linking files with BASE_NAME translator
+----------------------------------------------------------------------------
+ld -o translatorAll.o -r translator.o auxiliaryMethods.o; chmod a-x translatorAll.o
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Mix/Translator'
+cd ./../Common/CertificateRepository; gmake -j 1 
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Common/CertificateRepository'
+../../makefile.body:39: Depend/certificateRepository.d: No such file or directory
+/bin/sh -ec 'cc -M certificateRepository.cc | sed "s!certificateRepository.o!& Depend/certificateRepository.d!g" > Depend/certificateRepository.d'
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Common/CertificateRepository'
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Common/CertificateRepository'
+g++ -Wall -I/usr/include/g++    -c certificateRepository.cc -o certificateRepository.o
+----------------------------------------------------------------------------
+....I am working on linking files with BASE_NAME certificateRepository
+----------------------------------------------------------------------------
+ld -o certificateRepositoryAll.o -r certificateRepository.o; chmod a-x certificateRepositoryAll.o
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Common/CertificateRepository'
+cd ./../Common/Cipherer; gmake -j 1 
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Common/Cipherer'
+../../makefile.body:39: Depend/cipherer.d: No such file or directory
+../../makefile.body:39: Depend/keyGeneration.d: No such file or directory
+../../makefile.body:39: Depend/symetricCoding.d: No such file or directory
+../../makefile.body:39: Depend/asymetricCoding.d: No such file or directory
+../../makefile.body:39: Depend/auxiliaryMethods.d: No such file or directory
+../../makefile.body:39: Depend/asymetricKeyCoding.d: No such file or directory
+../../makefile.body:39: Depend/digestAndSignature.d: No such file or directory
+../../makefile.body:39: Depend/asymetricBlockCoding.d: No such file or directory
+../../makefile.body:39: Depend/sealing.d: No such file or directory
+/bin/sh -ec 'cc -M sealing.cc | sed "s!sealing.o!& Depend/sealing.d!g" > Depend/sealing.d'
+/bin/sh -ec 'cc -M asymetricBlockCoding.cc | sed "s!asymetricBlockCoding.o!& Depend/asymetricBlockCoding.d!g" > Depend/asymetricBlockCoding.d'
+/bin/sh -ec 'cc -M digestAndSignature.cc | sed "s!digestAndSignature.o!& Depend/digestAndSignature.d!g" > Depend/digestAndSignature.d'
+/bin/sh -ec 'cc -M asymetricKeyCoding.cc | sed "s!asymetricKeyCoding.o!& Depend/asymetricKeyCoding.d!g" > Depend/asymetricKeyCoding.d'
+/bin/sh -ec 'cc -M auxiliaryMethods.cc | sed "s!auxiliaryMethods.o!& Depend/auxiliaryMethods.d!g" > Depend/auxiliaryMethods.d'
+/bin/sh -ec 'cc -M asymetricCoding.cc | sed "s!asymetricCoding.o!& Depend/asymetricCoding.d!g" > Depend/asymetricCoding.d'
+/bin/sh -ec 'cc -M symetricCoding.cc | sed "s!symetricCoding.o!& Depend/symetricCoding.d!g" > Depend/symetricCoding.d'
+/bin/sh -ec 'cc -M keyGeneration.cc | sed "s!keyGeneration.o!& Depend/keyGeneration.d!g" > Depend/keyGeneration.d'
+/bin/sh -ec 'cc -M cipherer.cc | sed "s!cipherer.o!& Depend/cipherer.d!g" > Depend/cipherer.d'
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Common/Cipherer'
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Common/Cipherer'
+g++ -Wall -I/usr/include/g++    -c cipherer.cc -o cipherer.o
+g++ -Wall -I/usr/include/g++    -c keyGeneration.cc -o keyGeneration.o
+g++ -Wall -I/usr/include/g++    -c symetricCoding.cc -o symetricCoding.o
+g++ -Wall -I/usr/include/g++    -c asymetricCoding.cc -o asymetricCoding.o
+g++ -Wall -I/usr/include/g++    -c auxiliaryMethods.cc -o auxiliaryMethods.o
+g++ -Wall -I/usr/include/g++    -c asymetricKeyCoding.cc -o asymetricKeyCoding.o
+g++ -Wall -I/usr/include/g++    -c digestAndSignature.cc -o digestAndSignature.o
+g++ -Wall -I/usr/include/g++    -c asymetricBlockCoding.cc -o asymetricBlockCoding.o
+g++ -Wall -I/usr/include/g++    -c sealing.cc -o sealing.o
+----------------------------------------------------------------------------
+....I am working on linking files with BASE_NAME cipherer
+----------------------------------------------------------------------------
+ld -o ciphererAll.o -r cipherer.o keyGeneration.o symetricCoding.o asymetricCoding.o auxiliaryMethods.o asymetricKeyCoding.o digestAndSignature.o asymetricBlockCoding.o sealing.o; chmod a-x ciphererAll.o
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Common/Cipherer'
+cd ./../Common/ConfigFile; gmake -j 1
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Common/ConfigFile'
+../../makefile.body:39: Depend/configFile.d: No such file or directory
+/bin/sh -ec 'cc -M configFile.cc | sed "s!configFile.o!& Depend/configFile.d!g" > Depend/configFile.d'
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Common/ConfigFile'
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Common/ConfigFile'
+g++ -Wall -I/usr/include/g++    -c configFile.cc -o configFile.o
+----------------------------------------------------------------------------
+....I am working on linking files with BASE_NAME configFile
+----------------------------------------------------------------------------
+ld -o configFileAll.o -r configFile.o; chmod a-x configFileAll.o
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Common/ConfigFile'
+cd ./../Common/Debugable; gmake -j 1 
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Common/Debugable'
+../../makefile.body:39: Depend/debugable.d: No such file or directory
+/bin/sh -ec 'cc -M debugable.cc | sed "s!debugable.o!& Depend/debugable.d!g" > Depend/debugable.d'
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Common/Debugable'
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Common/Debugable'
+g++ -Wall -I/usr/include/g++    -c debugable.cc -o debugable.o
+----------------------------------------------------------------------------
+....I am working on linking files with BASE_NAME debugable
+----------------------------------------------------------------------------
+ld -o debugableAll.o -r debugable.o; chmod a-x debugableAll.o
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Common/Debugable'
+cd ./../Common/GMessage; gmake -j 1 
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Common/GMessage'
+../../makefile.body:39: Depend/gMessage.d: No such file or directory
+../../makefile.body:39: Depend/arrayGMessage.d: No such file or directory
+../../makefile.body:39: Depend/bytesField.d: No such file or directory
+../../makefile.body:39: Depend/estime.d: No such file or directory
+../../makefile.body:39: Depend/esoAC.d: No such file or directory
+../../makefile.body:39: Depend/fieldQueue.d: No such file or directory
+../../makefile.body:39: Depend/fields.d: No such file or directory
+../../makefile.body:39: Depend/file.d: No such file or directory
+../../makefile.body:39: Depend/idField.d: No such file or directory
+../../makefile.body:39: Depend/intField.d: No such file or directory
+../../makefile.body:39: Depend/msgField.d: No such file or directory
+../../makefile.body:39: Depend/myString.d: No such file or directory
+../../makefile.body:39: Depend/queue.d: No such file or directory
+../../makefile.body:39: Depend/record.d: No such file or directory
+../../makefile.body:39: Depend/stringField.d: No such file or directory
+../../makefile.body:39: Depend/table.d: No such file or directory
+../../makefile.body:39: Depend/timeField.d: No such file or directory
+/bin/sh -ec 'cc -M timeField.cc | sed "s!timeField.o!& Depend/timeField.d!g" > Depend/timeField.d'
+/bin/sh -ec 'cc -M table.cc | sed "s!table.o!& Depend/table.d!g" > Depend/table.d'
+/bin/sh -ec 'cc -M stringField.cc | sed "s!stringField.o!& Depend/stringField.d!g" > Depend/stringField.d'
+/bin/sh -ec 'cc -M record.cc | sed "s!record.o!& Depend/record.d!g" > Depend/record.d'
+/bin/sh -ec 'cc -M queue.cc | sed "s!queue.o!& Depend/queue.d!g" > Depend/queue.d'
+/bin/sh -ec 'cc -M myString.cc | sed "s!myString.o!& Depend/myString.d!g" > Depend/myString.d'
+/bin/sh -ec 'cc -M msgField.cc | sed "s!msgField.o!& Depend/msgField.d!g" > Depend/msgField.d'
+/bin/sh -ec 'cc -M intField.cc | sed "s!intField.o!& Depend/intField.d!g" > Depend/intField.d'
+/bin/sh -ec 'cc -M idField.cc | sed "s!idField.o!& Depend/idField.d!g" > Depend/idField.d'
+/bin/sh -ec 'cc -M file.cc | sed "s!file.o!& Depend/file.d!g" > Depend/file.d'
+/bin/sh -ec 'cc -M fields.cc | sed "s!fields.o!& Depend/fields.d!g" > Depend/fields.d'
+/bin/sh -ec 'cc -M fieldQueue.cc | sed "s!fieldQueue.o!& Depend/fieldQueue.d!g" > Depend/fieldQueue.d'
+/bin/sh -ec 'cc -M esoAC.cc | sed "s!esoAC.o!& Depend/esoAC.d!g" > Depend/esoAC.d'
+/bin/sh -ec 'cc -M estime.cc | sed "s!estime.o!& Depend/estime.d!g" > Depend/estime.d'
+/bin/sh -ec 'cc -M bytesField.cc | sed "s!bytesField.o!& Depend/bytesField.d!g" > Depend/bytesField.d'
+/bin/sh -ec 'cc -M arrayGMessage.cc | sed "s!arrayGMessage.o!& Depend/arrayGMessage.d!g" > Depend/arrayGMessage.d'
+/bin/sh -ec 'cc -M gMessage.cc | sed "s!gMessage.o!& Depend/gMessage.d!g" > Depend/gMessage.d'
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Common/GMessage'
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Common/GMessage'
+g++ -Wall -I/usr/include/g++    -c gMessage.cc -o gMessage.o
+g++ -Wall -I/usr/include/g++    -c arrayGMessage.cc -o arrayGMessage.o
+g++ -Wall -I/usr/include/g++    -c bytesField.cc -o bytesField.o
+g++ -Wall -I/usr/include/g++    -c estime.cc -o estime.o
+g++ -Wall -I/usr/include/g++    -c esoAC.cc -o esoAC.o
+g++ -Wall -I/usr/include/g++    -c fieldQueue.cc -o fieldQueue.o
+g++ -Wall -I/usr/include/g++    -c fields.cc -o fields.o
+g++ -Wall -I/usr/include/g++    -c file.cc -o file.o
+g++ -Wall -I/usr/include/g++    -c idField.cc -o idField.o
+g++ -Wall -I/usr/include/g++    -c intField.cc -o intField.o
+g++ -Wall -I/usr/include/g++    -c msgField.cc -o msgField.o
+g++ -Wall -I/usr/include/g++    -c myString.cc -o myString.o
+g++ -Wall -I/usr/include/g++    -c queue.cc -o queue.o
+g++ -Wall -I/usr/include/g++    -c record.cc -o record.o
+g++ -Wall -I/usr/include/g++    -c stringField.cc -o stringField.o
+g++ -Wall -I/usr/include/g++    -c table.cc -o table.o
+g++ -Wall -I/usr/include/g++    -c timeField.cc -o timeField.o
+----------------------------------------------------------------------------
+....I am working on linking files with BASE_NAME gMessage
+----------------------------------------------------------------------------
+ld -o gMessageAll.o -r gMessage.o arrayGMessage.o bytesField.o estime.o esoAC.o fieldQueue.o fields.o file.o idField.o intField.o msgField.o myString.o queue.o record.o stringField.o table.o timeField.o; chmod a-x gMessageAll.o
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Common/GMessage'
+cd ./../Common/KeyManager; gmake -j 1 
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Common/KeyManager'
+../../makefile.body:39: Depend/keyManager.d: No such file or directory
+/bin/sh -ec 'cc -M keyManager.cc | sed "s!keyManager.o!& Depend/keyManager.d!g" > Depend/keyManager.d'
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Common/KeyManager'
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Common/KeyManager'
+g++ -Wall -I/usr/include/g++    -c keyManager.cc -o keyManager.o
+----------------------------------------------------------------------------
+....I am working on linking files with BASE_NAME keyManager
+----------------------------------------------------------------------------
+ld -o keyManagerAll.o -r keyManager.o; chmod a-x keyManagerAll.o
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Common/KeyManager'
+cd ./../Common/Killer; gmake -j 1
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Common/Killer'
+../../makefile.body:39: Depend/killer.d: No such file or directory
+/bin/sh -ec 'cc -M killer.cc | sed "s!killer.o!& Depend/killer.d!g" > Depend/killer.d'
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Common/Killer'
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Common/Killer'
+g++ -Wall -I/usr/include/g++    -c killer.cc -o killer.o
+----------------------------------------------------------------------------
+....I am working on linking files with BASE_NAME killer
+----------------------------------------------------------------------------
+ld -o killerAll.o -r killer.o; chmod a-x killerAll.o
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Common/Killer'
+cd ./../Common/LogFile; gmake -j 1
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Common/LogFile'
+../../makefile.body:39: Depend/logFile.d: No such file or directory
+/bin/sh -ec 'cc -M logFile.cc | sed "s!logFile.o!& Depend/logFile.d!g" > Depend/logFile.d'
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Common/LogFile'
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Common/LogFile'
+g++ -Wall -I/usr/include/g++    -c logFile.cc -o logFile.o
+----------------------------------------------------------------------------
+....I am working on linking files with BASE_NAME logFile
+----------------------------------------------------------------------------
+ld -o logFileAll.o -r logFile.o; chmod a-x logFileAll.o
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Common/LogFile'
+cd ./../Common/MessageIDRepository; gmake -j 1 
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Common/MessageIDRepository'
+../../makefile.body:39: Depend/messageIDRepository.d: No such file or directory
+/bin/sh -ec 'cc -M messageIDRepository.cc | sed "s!messageIDRepository.o!& Depend/messageIDRepository.d!g" > Depend/messageIDRepository.d'
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Common/MessageIDRepository'
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Common/MessageIDRepository'
+g++ -Wall -I/usr/include/g++    -c messageIDRepository.cc -o messageIDRepository.o
+----------------------------------------------------------------------------
+....I am working on linking files with BASE_NAME messageIDRepository
+----------------------------------------------------------------------------
+ld -o messageIDRepositoryAll.o -r messageIDRepository.o; chmod a-x messageIDRepositoryAll.o
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Common/MessageIDRepository'
+cd ./../Common/MessageQueue; gmake -j 1 
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Common/MessageQueue'
+../../makefile.body:39: Depend/messageQueue.d: No such file or directory
+/bin/sh -ec 'cc -M messageQueue.cc | sed "s!messageQueue.o!& Depend/messageQueue.d!g" > Depend/messageQueue.d'
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Common/MessageQueue'
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Common/MessageQueue'
+g++ -Wall -I/usr/include/g++    -c messageQueue.cc -o messageQueue.o
+----------------------------------------------------------------------------
+....I am working on linking files with BASE_NAME messageQueue
+----------------------------------------------------------------------------
+ld -o messageQueueAll.o -r messageQueue.o; chmod a-x messageQueueAll.o
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Common/MessageQueue'
+cd ./../Common/Receiver; gmake -j 1 
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Common/Receiver'
+../../makefile.body:39: Depend/receiver.d: No such file or directory
+../../makefile.body:39: Depend/receiverRequestThread.d: No such file or directory
+/bin/sh -ec 'cc -M receiverRequestThread.cc | sed "s!receiverRequestThread.o!& Depend/receiverRequestThread.d!g" > Depend/receiverRequestThread.d'
+/bin/sh -ec 'cc -M receiver.cc | sed "s!receiver.o!& Depend/receiver.d!g" > Depend/receiver.d'
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Common/Receiver'
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Common/Receiver'
+g++ -Wall -I/usr/include/g++    -c receiver.cc -o receiver.o
+g++ -Wall -I/usr/include/g++    -c receiverRequestThread.cc -o receiverRequestThread.o
+----------------------------------------------------------------------------
+....I am working on linking files with BASE_NAME receiver
+----------------------------------------------------------------------------
+ld -o receiverAll.o -r receiver.o receiverRequestThread.o; chmod a-x receiverAll.o
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Common/Receiver'
+cd ./../Common/Runable; gmake -j 1 
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Common/Runable'
+../../makefile.body:39: Depend/runable.d: No such file or directory
+/bin/sh -ec 'cc -M runable.cc | sed "s!runable.o!& Depend/runable.d!g" > Depend/runable.d'
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Common/Runable'
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Common/Runable'
+g++ -Wall -I/usr/include/g++    -c runable.cc -o runable.o
+----------------------------------------------------------------------------
+....I am working on linking files with BASE_NAME runable
+----------------------------------------------------------------------------
+ld -o runableAll.o -r runable.o; chmod a-x runableAll.o
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Common/Runable'
+cd ./../Common/RunningObject; gmake -j 1 
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Common/RunningObject'
+../../makefile.body:39: Depend/runningObject.d: No such file or directory
+/bin/sh -ec 'cc -M runningObject.cc | sed "s!runningObject.o!& Depend/runningObject.d!g" > Depend/runningObject.d'
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Common/RunningObject'
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Common/RunningObject'
+g++ -Wall -I/usr/include/g++    -c runningObject.cc -o runningObject.o
+----------------------------------------------------------------------------
+....I am working on linking files with BASE_NAME runningObject
+----------------------------------------------------------------------------
+ld -o runningObjectAll.o -r runningObject.o; chmod a-x runningObjectAll.o
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Common/RunningObject'
+cd ./../Common/Semaphore; gmake -j 1 
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Common/Semaphore'
+../../makefile.body:39: Depend/semaphore.d: No such file or directory
+/bin/sh -ec 'cc -M semaphore.cc | sed "s!semaphore.o!& Depend/semaphore.d!g" > Depend/semaphore.d'
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Common/Semaphore'
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Common/Semaphore'
+g++ -Wall -I/usr/include/g++    -c semaphore.cc -o semaphore.o
+----------------------------------------------------------------------------
+....I am working on linking files with BASE_NAME semaphore
+----------------------------------------------------------------------------
+ld -o semaphoreAll.o -r semaphore.o; chmod a-x semaphoreAll.o
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Common/Semaphore'
+cd ./../Common/Sender; gmake -j 1 
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Common/Sender'
+../../makefile.body:39: Depend/sender.d: No such file or directory
+../../makefile.body:39: Depend/senderDispatcherThread.d: No such file or directory
+/bin/sh -ec 'cc -M senderDispatcherThread.cc | sed "s!senderDispatcherThread.o!& Depend/senderDispatcherThread.d!g" > Depend/senderDispatcherThread.d'
+/bin/sh -ec 'cc -M sender.cc | sed "s!sender.o!& Depend/sender.d!g" > Depend/sender.d'
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Common/Sender'
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Common/Sender'
+g++ -Wall -I/usr/include/g++    -c sender.cc -o sender.o
+g++ -Wall -I/usr/include/g++    -c senderDispatcherThread.cc -o senderDispatcherThread.o
+----------------------------------------------------------------------------
+....I am working on linking files with BASE_NAME sender
+----------------------------------------------------------------------------
+ld -o senderAll.o -r sender.o senderDispatcherThread.o; chmod a-x senderAll.o
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Common/Sender'
+cd ./../Common/Shutdownable; gmake -j 1
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Common/Shutdownable'
+../../makefile.body:39: Depend/shutdownable.d: No such file or directory
+/bin/sh -ec 'cc -M shutdownable.cc | sed "s!shutdownable.o!& Depend/shutdownable.d!g" > Depend/shutdownable.d'
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Common/Shutdownable'
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Common/Shutdownable'
+g++ -Wall -I/usr/include/g++    -c shutdownable.cc -o shutdownable.o
+----------------------------------------------------------------------------
+....I am working on linking files with BASE_NAME shutdownable
+----------------------------------------------------------------------------
+ld -o shutdownableAll.o -r shutdownable.o; chmod a-x shutdownableAll.o
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Common/Shutdownable'
+cd ./../Common/SignalManager; gmake -j 1 
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Common/SignalManager'
+../../makefile.body:39: Depend/signalManager.d: No such file or directory
+/bin/sh -ec 'cc -M signalManager.cc | sed "s!signalManager.o!& Depend/signalManager.d!g" > Depend/signalManager.d'
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Common/SignalManager'
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Common/SignalManager'
+g++ -Wall -I/usr/include/g++    -c signalManager.cc -o signalManager.o
+----------------------------------------------------------------------------
+....I am working on linking files with BASE_NAME signalManager
+----------------------------------------------------------------------------
+ld -o signalManagerAll.o -r signalManager.o; chmod a-x signalManagerAll.o
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Common/SignalManager'
+cd ./../Common/Utils; gmake -j 1 
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Common/Utils'
+../../makefile.body:39: Depend/mem.d: No such file or directory
+../../makefile.body:39: Depend/createTables.d: No such file or directory
+/bin/sh -ec 'cc -M createTables.cc | sed "s!createTables.o!& Depend/createTables.d!g" > Depend/createTables.d'
+/bin/sh -ec 'cc -M mem.cc | sed "s!mem.o!& Depend/mem.d!g" > Depend/mem.d'
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Common/Utils'
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Common/Utils'
+g++ -Wall -I/usr/include/g++    -c mem.cc -o mem.o
+g++ -Wall -I/usr/include/g++    -c createTables.cc -o createTables.o
+----------------------------------------------------------------------------
+....I am working on linking files with BASE_NAME utils
+----------------------------------------------------------------------------
+ld -o utilsAll.o -r mem.o createTables.o; chmod a-x utilsAll.o
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Common/Utils'
+----------------------------------------------------------------------------
+======================== I am creating Mix NOW !!! =========================
+----------------------------------------------------------------------------
+g++ -Wall -I/usr/include/g++  -o mix main.cc Mix/mixAll.o Padder/padderAll.o PaddingGenerator/paddingGeneratorAll.o Translator/translatorAll.o AddressManager/addressManagerAll.o Chopper/chopperAll.o MessageCreator/messageCreatorAll.o ../Common/GMessage/gMessageAll.o ../Common/Receiver/receiverAll.o ../Common/Sender/senderAll.o ../Common/LogFile/logFileAll.o ../Common/ConfigFile/configFileAll.o ../Common/SignalManager/signalManagerAll.o ../Common/Cipherer/ciphererAll.o ../Common/CertificateRepository/certificateRepositoryAll.o ../Common/MessageIDRepository/messageIDRepositoryAll.o ../Common/Runable/runableAll.o ../Common/RunningObject/runningObjectAll.o ../Common/Shutdownable/shutdownableAll.o ../Common/Debugable/debugableAll.o ../Common/MessageQueue/messageQueueAll.o ../Common/Semaphore/semaphoreAll.o ../Common/Utils/utilsAll.o ../Common/KeyManager/keyManagerAll.o ../Common/Killer/killerAll.o MixOffspring/mixOffspringAll.o Linker/linkerAll.o Majordomo/majordomoAll.o \
+  -L/home/eternity/Source/Common/RSAEuro \
+          -lstdc++ -lm  -lrsaeuro  -lc_r
+/usr/lib/libc.so: warning: this program uses gets(), which is unsafe.
+/usr/lib/libc.so: WARNING!  setkey(3) not present in the system!
+/usr/lib/libc.so: WARNING!  des_setkey(3) not present in the system!
+/usr/lib/libc.so: WARNING!  encrypt(3) not present in the system!
+/usr/lib/libc.so: WARNING!  des_cipher(3) not present in the system!
+/usr/lib/libc.so: warning: this program uses f_prealloc(), which is stupid.
+../Common/Cipherer/ciphererAll.o: In function `Cipherer::GenerateAsymetricKey(GMessage *)':
+../Common/Cipherer/ciphererAll.o(.text+0x2fe1): undefined reference to `R_RandomCreate'
+../Common/Cipherer/ciphererAll.o(.text+0x3019): undefined reference to `R_GeneratePEMKeys'
+../Common/Cipherer/ciphererAll.o: In function `Cipherer::ProcessWithSymetricKey_RawVersion(GMessage *, char *, unsigned long, char **, unsigned long *, int)':
+../Common/Cipherer/ciphererAll.o(.text+0x69e7): undefined reference to `DES_CBCInit'
+../Common/Cipherer/ciphererAll.o(.text+0x6bbd): undefined reference to `DES_CBCUpdate'
+../Common/Cipherer/ciphererAll.o: In function `Cipherer::MessageDigest(MsgField *, MsgField **, GMessage *)':
+../Common/Cipherer/ciphererAll.o(.text+0x14bab): undefined reference to `R_DigestBlock'
+../Common/Cipherer/ciphererAll.o: In function `Cipherer::Sign(GMessage *, MsgField *, MsgField **, GMessage *)':
+../Common/Cipherer/ciphererAll.o(.text+0x14d58): undefined reference to `R_SignBlock'
+../Common/Cipherer/ciphererAll.o: In function `Cipherer::VerifySignature(GMessage *, MsgField *, MsgField *, GMessage *)':
+../Common/Cipherer/ciphererAll.o(.text+0x14f4e): undefined reference to `R_VerifyBlockSignature'
+../Common/Cipherer/ciphererAll.o: In function `Cipherer::DecryptBlockWithPublicKey(GMessage *, char *, unsigned long, char **, unsigned long *)':
+../Common/Cipherer/ciphererAll.o(.text+0x17f91): undefined reference to `RSAPublicDecrypt'
+../Common/Cipherer/ciphererAll.o: In function `Cipherer::DecryptBlockWithPrivateKey(GMessage *, char *, unsigned long, char **, unsigned long *)':
+../Common/Cipherer/ciphererAll.o(.text+0x18151): undefined reference to `RSAPrivateDecrypt'
+../Common/Cipherer/ciphererAll.o: In function `Cipherer::EncryptBlockWithPublicKey(GMessage *, char *, unsigned long, char **, unsigned long *)':
+../Common/Cipherer/ciphererAll.o(.text+0x182ab): undefined reference to `R_RandomCreate'
+../Common/Cipherer/ciphererAll.o(.text+0x183ab): undefined reference to `RSAPublicEncrypt'
+../Common/Cipherer/ciphererAll.o(.text+0x184c8): undefined reference to `R_RandomFinal'
+../Common/Cipherer/ciphererAll.o: In function `Cipherer::EncryptBlockWithPrivateKey(GMessage *, char *, unsigned long, char **, unsigned long *)':
+../Common/Cipherer/ciphererAll.o(.text+0x18616): undefined reference to `RSAPrivateEncrypt'
+../Common/Cipherer/ciphererAll.o: In function `Cipherer::Seal(GMessage *, GMessage *, MsgField *, MsgField **, GMessage *)':
+../Common/Cipherer/ciphererAll.o(.text+0x1b6a6): undefined reference to `R_RandomCreate'
+../Common/Cipherer/ciphererAll.o(.text+0x1b793): undefined reference to `R_SealPEMBlock'
+../Common/Cipherer/ciphererAll.o(.text+0x1bcbb): undefined reference to `R_RandomFinal'
+../Common/Cipherer/ciphererAll.o: In function `Cipherer::OpenSealed(GMessage *, GMessage *, MsgField *, MsgField **)':
+../Common/Cipherer/ciphererAll.o(.text+0x1c006): undefined reference to `R_OpenPEMBlock'
+gmake[1]: *** [mix] Error 1
+gmake[1]: Leaving directory `/home/eternity/public_html/Source/Mix'
+gmake: *** [Mix] Error 2
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+============================ Eternity Service ==============================
+========================= Student Project, MFF UK ==========================
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+cd ./Mix; gmake -j 1
+gmake[1]: Entering directory `/home/eternity/public_html/Source/Mix'
+----------------------------------------------------------------------------
+======================== I am working on Mix now... ========================
+----------------------------------------------------------------------------
+
+cd ./AddressManager; gmake -j 1 
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Mix/AddressManager'
+gmake[2]: Nothing to be done for `objects'.
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Mix/AddressManager'
+cd ./Chopper; gmake -j 1 
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Mix/Chopper'
+gmake[2]: Nothing to be done for `objects'.
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Mix/Chopper'
+cd ./Linker; gmake -j 1 
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Mix/Linker'
+gmake[2]: Nothing to be done for `objects'.
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Mix/Linker'
+cd ./Majordomo; gmake -j 1 
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Mix/Majordomo'
+gmake[2]: Nothing to be done for `objects'.
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Mix/Majordomo'
+cd ./MessageCreator; gmake -j 1 
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Mix/MessageCreator'
+gmake[2]: Nothing to be done for `objects'.
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Mix/MessageCreator'
+cd ./Mix; gmake -j 1 
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Mix/Mix'
+gmake[2]: Nothing to be done for `objects'.
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Mix/Mix'
+cd ./MixOffspring; gmake -j 1 
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Mix/MixOffspring'
+gmake[2]: Nothing to be done for `objects'.
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Mix/MixOffspring'
+cd ./Padder; gmake -j 1 
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Mix/Padder'
+gmake[2]: Nothing to be done for `objects'.
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Mix/Padder'
+cd ./PaddingGenerator; gmake -j 1 
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Mix/PaddingGenerator'
+gmake[2]: Nothing to be done for `objects'.
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Mix/PaddingGenerator'
+cd ./Translator; gmake -j 1 
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Mix/Translator'
+gmake[2]: Nothing to be done for `objects'.
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Mix/Translator'
+cd ./../Common/CertificateRepository; gmake -j 1 
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Common/CertificateRepository'
+gmake[2]: Nothing to be done for `objects'.
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Common/CertificateRepository'
+cd ./../Common/Cipherer; gmake -j 1 
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Common/Cipherer'
+gmake[2]: Nothing to be done for `objects'.
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Common/Cipherer'
+cd ./../Common/ConfigFile; gmake -j 1
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Common/ConfigFile'
+gmake[2]: Nothing to be done for `objects'.
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Common/ConfigFile'
+cd ./../Common/Debugable; gmake -j 1 
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Common/Debugable'
+gmake[2]: Nothing to be done for `objects'.
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Common/Debugable'
+cd ./../Common/GMessage; gmake -j 1 
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Common/GMessage'
+gmake[2]: Nothing to be done for `objects'.
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Common/GMessage'
+cd ./../Common/KeyManager; gmake -j 1 
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Common/KeyManager'
+gmake[2]: Nothing to be done for `objects'.
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Common/KeyManager'
+cd ./../Common/Killer; gmake -j 1
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Common/Killer'
+gmake[2]: Nothing to be done for `objects'.
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Common/Killer'
+cd ./../Common/LogFile; gmake -j 1
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Common/LogFile'
+gmake[2]: Nothing to be done for `objects'.
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Common/LogFile'
+cd ./../Common/MessageIDRepository; gmake -j 1 
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Common/MessageIDRepository'
+gmake[2]: Nothing to be done for `objects'.
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Common/MessageIDRepository'
+cd ./../Common/MessageQueue; gmake -j 1 
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Common/MessageQueue'
+gmake[2]: Nothing to be done for `objects'.
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Common/MessageQueue'
+cd ./../Common/Receiver; gmake -j 1 
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Common/Receiver'
+gmake[2]: Nothing to be done for `objects'.
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Common/Receiver'
+cd ./../Common/Runable; gmake -j 1 
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Common/Runable'
+gmake[2]: Nothing to be done for `objects'.
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Common/Runable'
+cd ./../Common/RunningObject; gmake -j 1 
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Common/RunningObject'
+gmake[2]: Nothing to be done for `objects'.
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Common/RunningObject'
+cd ./../Common/Semaphore; gmake -j 1 
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Common/Semaphore'
+gmake[2]: Nothing to be done for `objects'.
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Common/Semaphore'
+cd ./../Common/Sender; gmake -j 1 
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Common/Sender'
+gmake[2]: Nothing to be done for `objects'.
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Common/Sender'
+cd ./../Common/Shutdownable; gmake -j 1
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Common/Shutdownable'
+gmake[2]: Nothing to be done for `objects'.
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Common/Shutdownable'
+cd ./../Common/SignalManager; gmake -j 1 
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Common/SignalManager'
+gmake[2]: Nothing to be done for `objects'.
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Common/SignalManager'
+cd ./../Common/Utils; gmake -j 1 
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Common/Utils'
+gmake[2]: Nothing to be done for `objects'.
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Common/Utils'
+----------------------------------------------------------------------------
+======================== I am creating Mix NOW !!! =========================
+----------------------------------------------------------------------------
+g++ -Wall -I/usr/include/g++  -o mix main.cc Mix/mixAll.o Padder/padderAll.o PaddingGenerator/paddingGeneratorAll.o Translator/translatorAll.o AddressManager/addressManagerAll.o Chopper/chopperAll.o MessageCreator/messageCreatorAll.o ../Common/GMessage/gMessageAll.o ../Common/Receiver/receiverAll.o ../Common/Sender/senderAll.o ../Common/LogFile/logFileAll.o ../Common/ConfigFile/configFileAll.o ../Common/SignalManager/signalManagerAll.o ../Common/Cipherer/ciphererAll.o ../Common/CertificateRepository/certificateRepositoryAll.o ../Common/MessageIDRepository/messageIDRepositoryAll.o ../Common/Runable/runableAll.o ../Common/RunningObject/runningObjectAll.o ../Common/Shutdownable/shutdownableAll.o ../Common/Debugable/debugableAll.o ../Common/MessageQueue/messageQueueAll.o ../Common/Semaphore/semaphoreAll.o ../Common/Utils/utilsAll.o ../Common/KeyManager/keyManagerAll.o ../Common/Killer/killerAll.o MixOffspring/mixOffspringAll.o Linker/linkerAll.o Majordomo/majordomoAll.o \
+  -L/home/eternity/Source/Common/RSAEuro \
+          -lstdc++ -lm  -lrsaeuro  -lc_r
+/usr/lib/libc.so: warning: this program uses gets(), which is unsafe.
+/usr/lib/libc.so: WARNING!  setkey(3) not present in the system!
+/usr/lib/libc.so: WARNING!  des_setkey(3) not present in the system!
+/usr/lib/libc.so: WARNING!  encrypt(3) not present in the system!
+/usr/lib/libc.so: WARNING!  des_cipher(3) not present in the system!
+/usr/lib/libc.so: warning: this program uses f_prealloc(), which is stupid.
+----------------------------------------------------------------------------
+=============================== Mix done !!! ===============================
+----------------------------------------------------------------------------
+gmake[1]: Leaving directory `/home/eternity/public_html/Source/Mix'
+cd ./Acs; gmake -j 1
+gmake[1]: Entering directory `/home/eternity/public_html/Source/Acs'
+----------------------------------------------------------------------------
+======================== I am working on Acs now... ========================
+----------------------------------------------------------------------------
+
+cd ./../Common/../Common/CertificateRepository; gmake -j 1 
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Common/CertificateRepository'
+gmake[2]: Nothing to be done for `objects'.
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Common/CertificateRepository'
+cd ./../Common/../Common/ConfigFile; gmake -j 1 
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Common/ConfigFile'
+gmake[2]: Nothing to be done for `objects'.
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Common/ConfigFile'
+cd ./../Common/../Common/Debugable; gmake -j 1 
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Common/Debugable'
+gmake[2]: Nothing to be done for `objects'.
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Common/Debugable'
+cd ./../Common/../Common/GMessage; gmake -j 1 
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Common/GMessage'
+gmake[2]: Nothing to be done for `objects'.
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Common/GMessage'
+cd ./../Common/../Common/Killer; gmake -j 1 
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Common/Killer'
+gmake[2]: Nothing to be done for `objects'.
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Common/Killer'
+cd ./../Common/../Common/LogFile; gmake -j 1 
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Common/LogFile'
+gmake[2]: Nothing to be done for `objects'.
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Common/LogFile'
+cd ./../Common/../Common/MessageQueue; gmake -j 1 
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Common/MessageQueue'
+gmake[2]: Nothing to be done for `objects'.
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Common/MessageQueue'
+cd ./../Common/../Common/Receiver; gmake -j 1 
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Common/Receiver'
+gmake[2]: Nothing to be done for `objects'.
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Common/Receiver'
+cd ./../Common/../Common/Runable; gmake -j 1 
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Common/Runable'
+gmake[2]: Nothing to be done for `objects'.
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Common/Runable'
+cd ./../Common/../Common/RunningObject; gmake -j 1 
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Common/RunningObject'
+gmake[2]: Nothing to be done for `objects'.
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Common/RunningObject'
+cd ./../Common/../Common/Semaphore; gmake -j 1 
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Common/Semaphore'
+gmake[2]: Nothing to be done for `objects'.
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Common/Semaphore'
+cd ./../Common/../Common/Sender; gmake -j 1 
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Common/Sender'
+gmake[2]: Nothing to be done for `objects'.
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Common/Sender'
+cd ./../Common/../Common/Shutdownable; gmake -j 1 
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Common/Shutdownable'
+gmake[2]: Nothing to be done for `objects'.
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Common/Shutdownable'
+cd ./Acs; gmake -j 1 
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Acs/Acs'
+gmake[2]: Nothing to be done for `objects'.
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Acs/Acs'
+cd ./AcsOffspring; gmake -j 1 
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Acs/AcsOffspring'
+----------------------------------------------------------------------------
+....I am working on linking files with BASE_NAME acsOffspring
+----------------------------------------------------------------------------
+ld -o acsOffspringAll.o -r acsOffspring.o; chmod a-x acsOffspringAll.o
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Acs/AcsOffspring'
+cd ./AddressManager; gmake -j 1 
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Acs/AddressManager'
+../../makefile.body:39: Depend/addressManager.d: No such file or directory
+/bin/sh -ec 'cc -M addressManager.cc | sed "s!addressManager.o!& Depend/addressManager.d!g" > Depend/addressManager.d'
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Acs/AddressManager'
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Acs/AddressManager'
+g++ -Wall -g -I/usr/include/g++   -c addressManager.cc -o addressManager.o
+----------------------------------------------------------------------------
+....I am working on linking files with BASE_NAME addressManager
+----------------------------------------------------------------------------
+ld -o addressManagerAll.o -r addressManager.o; chmod a-x addressManagerAll.o
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Acs/AddressManager'
+cd ./Majordomo; gmake -j 1 
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Acs/Majordomo'
+../../makefile.body:39: Depend/majordomo.d: No such file or directory
+/bin/sh -ec 'cc -M majordomo.cc | sed "s!majordomo.o!& Depend/majordomo.d!g" > Depend/majordomo.d'
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Acs/Majordomo'
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Acs/Majordomo'
+g++ -Wall -g -I/usr/include/g++   -c majordomo.cc -o majordomo.o
+----------------------------------------------------------------------------
+....I am working on linking files with BASE_NAME majordomo
+----------------------------------------------------------------------------
+ld -o majordomoAll.o -r majordomo.o; chmod a-x majordomoAll.o
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Acs/Majordomo'
+----------------------------------------------------------------------------
+======================== I am creating ACS NOW !!! =========================
+----------------------------------------------------------------------------
+g++ -Wall -g -I/usr/include/g++ -o acs main.cc Acs/acsAll.o Majordomo/majordomoAll.o AcsOffspring/acsOffspringAll.o AddressManager/addressManagerAll.o ../Common/Receiver/receiverAll.o ../Common/CertificateRepository/certificateRepositoryAll.o ../Common/Sender/senderAll.o ../Common/GMessage/gMessageAll.o ../Common/Killer/killerAll.o ../Common/RunningObject/runningObjectAll.o ../Common/Shutdownable/shutdownableAll.o ../Common/Runable/runableAll.o ../Common/MessageQueue/messageQueueAll.o ../Common/LogFile/logFileAll.o ../Common/Semaphore/semaphoreAll.o ../Common/ConfigFile/configFileAll.o ../Common/Debugable/debugableAll.o \
+  -L/home/eternity/Source/Common/RSAEuro \
+          -lstdc++ -lrsaeuro  -lm  -lc_r
+main.cc: In function `int main(int, char **)':
+main.cc:26: warning: implicit declaration of function `int getopt(...)'
+/usr/lib/libc.so: warning: this program uses gets(), which is unsafe.
+/usr/lib/libc.so: WARNING!  setkey(3) not present in the system!
+/usr/lib/libc.so: WARNING!  des_setkey(3) not present in the system!
+/usr/lib/libc.so: WARNING!  encrypt(3) not present in the system!
+/usr/lib/libc.so: WARNING!  des_cipher(3) not present in the system!
+/usr/lib/libc.so: warning: this program uses f_prealloc(), which is stupid.
+----------------------------------------------------------------------------
+=============================== Acs done !!! ===============================
+----------------------------------------------------------------------------
+gmake[1]: Leaving directory `/home/eternity/public_html/Source/Acs'
+cd ./Eso; gmake -j 1
+gmake[1]: Entering directory `/home/eternity/public_html/Source/Eso'
+----------------------------------------------------------------------------
+======================== I am working on Eso now... ========================
+----------------------------------------------------------------------------
+
+cd ./Allocator; gmake -j 1 
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Eso/Allocator'
+../../makefile.body:39: Depend/allocator.d: No such file or directory
+/bin/sh -ec 'cc -M allocator.cc | sed "s!allocator.o!& Depend/allocator.d!g" > Depend/allocator.d'
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Eso/Allocator'
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Eso/Allocator'
+g++ -Wall -I/usr/include/g++    -c allocator.cc -o allocator.o
+----------------------------------------------------------------------------
+....I am working on linking files with BASE_NAME allocator
+----------------------------------------------------------------------------
+ld -o allocatorAll.o -r allocator.o; chmod a-x allocatorAll.o
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Eso/Allocator'
+cd ./Banker; gmake -j 1 
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Eso/Banker'
+../../makefile.body:39: Depend/banker.d: No such file or directory
+../../makefile.body:39: Depend/bankAux.d: No such file or directory
+../../makefile.body:39: Depend/bankClasses.d: No such file or directory
+/bin/sh -ec 'cc -M bankClasses.cc | sed "s!bankClasses.o!& Depend/bankClasses.d!g" > Depend/bankClasses.d'
+/bin/sh -ec 'cc -M bankAux.cc | sed "s!bankAux.o!& Depend/bankAux.d!g" > Depend/bankAux.d'
+/bin/sh -ec 'cc -M banker.cc | sed "s!banker.o!& Depend/banker.d!g" > Depend/banker.d'
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Eso/Banker'
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Eso/Banker'
+g++ -Wall -I/usr/include/g++    -c banker.cc -o banker.o
+g++ -Wall -I/usr/include/g++    -c bankAux.cc -o bankAux.o
+g++ -Wall -I/usr/include/g++    -c bankClasses.cc -o bankClasses.o
+----------------------------------------------------------------------------
+....I am working on linking files with BASE_NAME banker
+----------------------------------------------------------------------------
+ld -o bankerAll.o -r banker.o bankAux.o bankClasses.o; chmod a-x bankerAll.o
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Eso/Banker'
+cd ./Finder; gmake -j 1 
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Eso/Finder'
+../../makefile.body:39: Depend/finder.d: No such file or directory
+/bin/sh -ec 'cc -M finder.cc | sed "s!finder.o!& Depend/finder.d!g" > Depend/finder.d'
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Eso/Finder'
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Eso/Finder'
+g++ -Wall -I/usr/include/g++    -c finder.cc -o finder.o
+----------------------------------------------------------------------------
+....I am working on linking files with BASE_NAME finder
+----------------------------------------------------------------------------
+ld -o finderAll.o -r finder.o; chmod a-x finderAll.o
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Eso/Finder'
+cd ./Eso; gmake -j 1 
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Eso/Eso'
+../../makefile.body:39: Depend/eso.d: No such file or directory
+/bin/sh -ec 'cc -M eso.cc | sed "s!eso.o!& Depend/eso.d!g" > Depend/eso.d'
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Eso/Eso'
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Eso/Eso'
+g++ -Wall -I/usr/include/g++    -c eso.cc -o eso.o
+----------------------------------------------------------------------------
+....I am working on linking files with BASE_NAME eso
+----------------------------------------------------------------------------
+ld -o esoAll.o -r eso.o; chmod a-x esoAll.o
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Eso/Eso'
+cd ./Majordomo; gmake -j 1 
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Eso/Majordomo'
+../../makefile.body:39: Depend/esoMajordomo.d: No such file or directory
+../../makefile.body:39: Depend/esoAcMgrMethods.d: No such file or directory
+../../makefile.body:39: Depend/esoTimeOutCmds.d: No such file or directory
+../../makefile.body:39: Depend/esoMixCmds.d: No such file or directory
+../../makefile.body:39: Depend/esoMixCmdDataReceived.d: No such file or directory
+../../makefile.body:39: Depend/esoMixMsgsCreating.d: No such file or directory
+../../makefile.body:39: Depend/esoServiceCmds.d: No such file or directory
+../../makefile.body:39: Depend/esoServiceCmdsFindFile.d: No such file or directory
+../../makefile.body:39: Depend/esoServiceCmdsSaveFile.d: No such file or directory
+../../makefile.body:39: Depend/esoServiceMsgsFilling.d: No such file or directory
+/bin/sh -ec 'cc -M esoServiceMsgsFilling.cc | sed "s!esoServiceMsgsFilling.o!& Depend/esoServiceMsgsFilling.d!g" > Depend/esoServiceMsgsFilling.d'
+/bin/sh -ec 'cc -M esoServiceCmdsSaveFile.cc | sed "s!esoServiceCmdsSaveFile.o!& Depend/esoServiceCmdsSaveFile.d!g" > Depend/esoServiceCmdsSaveFile.d'
+/bin/sh -ec 'cc -M esoServiceCmdsFindFile.cc | sed "s!esoServiceCmdsFindFile.o!& Depend/esoServiceCmdsFindFile.d!g" > Depend/esoServiceCmdsFindFile.d'
+/bin/sh -ec 'cc -M esoServiceCmds.cc | sed "s!esoServiceCmds.o!& Depend/esoServiceCmds.d!g" > Depend/esoServiceCmds.d'
+/bin/sh -ec 'cc -M esoMixMsgsCreating.cc | sed "s!esoMixMsgsCreating.o!& Depend/esoMixMsgsCreating.d!g" > Depend/esoMixMsgsCreating.d'
+/bin/sh -ec 'cc -M esoMixCmdDataReceived.cc | sed "s!esoMixCmdDataReceived.o!& Depend/esoMixCmdDataReceived.d!g" > Depend/esoMixCmdDataReceived.d'
+/bin/sh -ec 'cc -M esoMixCmds.cc | sed "s!esoMixCmds.o!& Depend/esoMixCmds.d!g" > Depend/esoMixCmds.d'
+/bin/sh -ec 'cc -M esoTimeOutCmds.cc | sed "s!esoTimeOutCmds.o!& Depend/esoTimeOutCmds.d!g" > Depend/esoTimeOutCmds.d'
+/bin/sh -ec 'cc -M esoAcMgrMethods.cc | sed "s!esoAcMgrMethods.o!& Depend/esoAcMgrMethods.d!g" > Depend/esoAcMgrMethods.d'
+/bin/sh -ec 'cc -M esoMajordomo.cc | sed "s!esoMajordomo.o!& Depend/esoMajordomo.d!g" > Depend/esoMajordomo.d'
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Eso/Majordomo'
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Eso/Majordomo'
+g++ -Wall -I/usr/include/g++    -c esoMajordomo.cc -o esoMajordomo.o
+g++ -Wall -I/usr/include/g++    -c esoAcMgrMethods.cc -o esoAcMgrMethods.o
+g++ -Wall -I/usr/include/g++    -c esoTimeOutCmds.cc -o esoTimeOutCmds.o
+g++ -Wall -I/usr/include/g++    -c esoMixCmds.cc -o esoMixCmds.o
+g++ -Wall -I/usr/include/g++    -c esoMixCmdDataReceived.cc -o esoMixCmdDataReceived.o
+g++ -Wall -I/usr/include/g++    -c esoMixMsgsCreating.cc -o esoMixMsgsCreating.o
+g++ -Wall -I/usr/include/g++    -c esoServiceCmds.cc -o esoServiceCmds.o
+g++ -Wall -I/usr/include/g++    -c esoServiceCmdsFindFile.cc -o esoServiceCmdsFindFile.o
+g++ -Wall -I/usr/include/g++    -c esoServiceCmdsSaveFile.cc -o esoServiceCmdsSaveFile.o
+g++ -Wall -I/usr/include/g++    -c esoServiceMsgsFilling.cc -o esoServiceMsgsFilling.o
+----------------------------------------------------------------------------
+....I am working on linking files with BASE_NAME majordomo
+----------------------------------------------------------------------------
+ld -o majordomoAll.o -r esoMajordomo.o esoAcMgrMethods.o esoTimeOutCmds.o esoMixCmds.o esoMixCmdDataReceived.o esoMixMsgsCreating.o esoServiceCmds.o esoServiceCmdsFindFile.o esoServiceCmdsSaveFile.o esoServiceMsgsFilling.o; chmod a-x majordomoAll.o
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Eso/Majordomo'
+cd ./Scheduler; gmake -j 1 
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Eso/Scheduler'
+../../makefile.body:39: Depend/scheduler.d: No such file or directory
+../../makefile.body:39: Depend/stable.d: No such file or directory
+/bin/sh -ec 'cc -M stable.cc | sed "s!stable.o!& Depend/stable.d!g" > Depend/stable.d'
+/bin/sh -ec 'cc -M scheduler.cc | sed "s!scheduler.o!& Depend/scheduler.d!g" > Depend/scheduler.d'
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Eso/Scheduler'
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Eso/Scheduler'
+g++ -Wall -I/usr/include/g++    -c scheduler.cc -o scheduler.o
+g++ -Wall -I/usr/include/g++    -c stable.cc -o stable.o
+----------------------------------------------------------------------------
+....I am working on linking files with BASE_NAME scheduler
+----------------------------------------------------------------------------
+ld -o schedulerAll.o -r scheduler.o stable.o; chmod a-x schedulerAll.o
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Eso/Scheduler'
+cd ./TimeSynchronizer; gmake -j 1 
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Eso/TimeSynchronizer'
+../../makefile.body:39: Depend/timesynch.d: No such file or directory
+../../makefile.body:39: Depend/squeue.d: No such file or directory
+/bin/sh -ec 'cc -M squeue.cc | sed "s!squeue.o!& Depend/squeue.d!g" > Depend/squeue.d'
+/bin/sh -ec 'cc -M timesynch.cc | sed "s!timesynch.o!& Depend/timesynch.d!g" > Depend/timesynch.d'
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Eso/TimeSynchronizer'
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Eso/TimeSynchronizer'
+g++ -Wall -I/usr/include/g++    -c timesynch.cc -o timesynch.o
+g++ -Wall -I/usr/include/g++    -c squeue.cc -o squeue.o
+----------------------------------------------------------------------------
+....I am working on linking files with BASE_NAME timesynch
+----------------------------------------------------------------------------
+ld -o timesynchAll.o -r timesynch.o squeue.o; chmod a-x timesynchAll.o
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Eso/TimeSynchronizer'
+cd ./TCBWrapper; gmake -j 1 
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Eso/TCBWrapper'
+../../makefile.body:39: Depend/tcbWrapper.d: No such file or directory
+../../makefile.body:39: Depend/tcbTable.d: No such file or directory
+../../makefile.body:39: Depend/keywords.d: No such file or directory
+/bin/sh -ec 'cc -M keywords.cc | sed "s!keywords.o!& Depend/keywords.d!g" > Depend/keywords.d'
+/bin/sh -ec 'cc -M tcbTable.cc | sed "s!tcbTable.o!& Depend/tcbTable.d!g" > Depend/tcbTable.d'
+/bin/sh -ec 'cc -M tcbWrapper.cc | sed "s!tcbWrapper.o!& Depend/tcbWrapper.d!g" > Depend/tcbWrapper.d'
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Eso/TCBWrapper'
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Eso/TCBWrapper'
+g++ -Wall -I/usr/include/g++    -c tcbWrapper.cc -o tcbWrapper.o
+g++ -Wall -I/usr/include/g++    -c tcbTable.cc -o tcbTable.o
+g++ -Wall -I/usr/include/g++    -c keywords.cc -o keywords.o
+----------------------------------------------------------------------------
+....I am working on linking files with BASE_NAME tcbWrapper
+----------------------------------------------------------------------------
+ld -o tcbWrapperAll.o -r tcbWrapper.o tcbTable.o keywords.o; chmod a-x tcbWrapperAll.o
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Eso/TCBWrapper'
+cd ./../Six; gmake -j 1 
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Six'
+----------------------------------------------------------------------------
+======================== I am working on Six now... ========================
+----------------------------------------------------------------------------
+
+cd ./Six; gmake -j 1 
+gmake[3]: Entering directory `/home/eternity/public_html/Source/Six/Six'
+../../makefile.body:39: Depend/six.d: No such file or directory
+/bin/sh -ec 'cc -M six.cc | sed "s!six.o!& Depend/six.d!g" > Depend/six.d'
+gmake[3]: Leaving directory `/home/eternity/public_html/Source/Six/Six'
+gmake[3]: Entering directory `/home/eternity/public_html/Source/Six/Six'
+g++ -Wall -I/usr/include/g++    -c six.cc -o six.o
+----------------------------------------------------------------------------
+....I am working on linking files with BASE_NAME six
+----------------------------------------------------------------------------
+ld -o sixAll.o -r six.o; chmod a-x sixAll.o
+gmake[3]: Leaving directory `/home/eternity/public_html/Source/Six/Six'
+cd ./SixMajordomo; gmake -j 1 
+gmake[3]: Entering directory `/home/eternity/public_html/Source/Six/SixMajordomo'
+../../makefile.body:39: Depend/sixMajordomo.d: No such file or directory
+../../makefile.body:39: Depend/sixAcMgrMethods.d: No such file or directory
+../../makefile.body:39: Depend/sixMixCmds.d: No such file or directory
+../../makefile.body:39: Depend/sixMixCmdDataReceived.d: No such file or directory
+../../makefile.body:39: Depend/sixMixMsgsCreating.d: No such file or directory
+../../makefile.body:39: Depend/sixServiceCmds.d: No such file or directory
+../../makefile.body:39: Depend/sixServiceMsgsFilling.d: No such file or directory
+/bin/sh -ec 'cc -M sixServiceMsgsFilling.cc | sed "s!sixServiceMsgsFilling.o!& Depend/sixServiceMsgsFilling.d!g" > Depend/sixServiceMsgsFilling.d'
+/bin/sh -ec 'cc -M sixServiceCmds.cc | sed "s!sixServiceCmds.o!& Depend/sixServiceCmds.d!g" > Depend/sixServiceCmds.d'
+/bin/sh -ec 'cc -M sixMixMsgsCreating.cc | sed "s!sixMixMsgsCreating.o!& Depend/sixMixMsgsCreating.d!g" > Depend/sixMixMsgsCreating.d'
+/bin/sh -ec 'cc -M sixMixCmdDataReceived.cc | sed "s!sixMixCmdDataReceived.o!& Depend/sixMixCmdDataReceived.d!g" > Depend/sixMixCmdDataReceived.d'
+/bin/sh -ec 'cc -M sixMixCmds.cc | sed "s!sixMixCmds.o!& Depend/sixMixCmds.d!g" > Depend/sixMixCmds.d'
+/bin/sh -ec 'cc -M sixAcMgrMethods.cc | sed "s!sixAcMgrMethods.o!& Depend/sixAcMgrMethods.d!g" > Depend/sixAcMgrMethods.d'
+/bin/sh -ec 'cc -M sixMajordomo.cc | sed "s!sixMajordomo.o!& Depend/sixMajordomo.d!g" > Depend/sixMajordomo.d'
+gmake[3]: Leaving directory `/home/eternity/public_html/Source/Six/SixMajordomo'
+gmake[3]: Entering directory `/home/eternity/public_html/Source/Six/SixMajordomo'
+g++ -Wall -I/usr/include/g++    -c sixMajordomo.cc -o sixMajordomo.o
+g++ -Wall -I/usr/include/g++    -c sixAcMgrMethods.cc -o sixAcMgrMethods.o
+g++ -Wall -I/usr/include/g++    -c sixMixCmds.cc -o sixMixCmds.o
+g++ -Wall -I/usr/include/g++    -c sixMixCmdDataReceived.cc -o sixMixCmdDataReceived.o
+g++ -Wall -I/usr/include/g++    -c sixMixMsgsCreating.cc -o sixMixMsgsCreating.o
+g++ -Wall -I/usr/include/g++    -c sixServiceCmds.cc -o sixServiceCmds.o
+g++ -Wall -I/usr/include/g++    -c sixServiceMsgsFilling.cc -o sixServiceMsgsFilling.o
+----------------------------------------------------------------------------
+....I am working on linking files with BASE_NAME sixMajordomo
+----------------------------------------------------------------------------
+ld -o sixMajordomoAll.o -r sixMajordomo.o sixAcMgrMethods.o sixMixCmds.o sixMixCmdDataReceived.o sixMixMsgsCreating.o sixServiceCmds.o sixServiceMsgsFilling.o; chmod a-x sixMajordomoAll.o
+gmake[3]: Leaving directory `/home/eternity/public_html/Source/Six/SixMajordomo'
+cd ./SixOffspring; gmake -j 1 
+gmake[3]: Entering directory `/home/eternity/public_html/Source/Six/SixOffspring'
+../../makefile.body:39: Depend/sixOffspring.d: No such file or directory
+/bin/sh -ec 'cc -M sixOffspring.cc | sed "s!sixOffspring.o!& Depend/sixOffspring.d!g" > Depend/sixOffspring.d'
+gmake[3]: Leaving directory `/home/eternity/public_html/Source/Six/SixOffspring'
+gmake[3]: Entering directory `/home/eternity/public_html/Source/Six/SixOffspring'
+g++ -Wall -I/usr/include/g++    -c sixOffspring.cc -o sixOffspring.o
+----------------------------------------------------------------------------
+....I am working on linking files with BASE_NAME sixOffspring
+----------------------------------------------------------------------------
+ld -o sixOffspringAll.o -r sixOffspring.o; chmod a-x sixOffspringAll.o
+gmake[3]: Leaving directory `/home/eternity/public_html/Source/Six/SixOffspring'
+----------------------------------------------------------------------------
+=============================== Six Done !!! ===============================
+----------------------------------------------------------------------------
+
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Six'
+cd ./../Common/ACManager; gmake -j 1 
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Common/ACManager'
+../../makefile.body:39: Depend/acManager.d: No such file or directory
+/bin/sh -ec 'cc -M acManager.cc | sed "s!acManager.o!& Depend/acManager.d!g" > Depend/acManager.d'
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Common/ACManager'
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Common/ACManager'
+g++ -Wall -I/usr/include/g++    -c acManager.cc -o acManager.o
+----------------------------------------------------------------------------
+....I am working on linking files with BASE_NAME acManager
+----------------------------------------------------------------------------
+ld -o acManagerAll.o -r acManager.o; chmod a-x acManagerAll.o
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Common/ACManager'
+cd ./../Common/Debugable; gmake -j 1 
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Common/Debugable'
+gmake[2]: Nothing to be done for `objects'.
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Common/Debugable'
+cd ./../Common/Cipherer; gmake -j 1 
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Common/Cipherer'
+gmake[2]: Nothing to be done for `objects'.
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Common/Cipherer'
+cd ./../Common/Payments; gmake -j 1 
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Common/Payments'
+../../makefile.body:39: Depend/payRecord.d: No such file or directory
+/bin/sh -ec 'cc -M payRecord.cc | sed "s!payRecord.o!& Depend/payRecord.d!g" > Depend/payRecord.d'
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Common/Payments'
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Common/Payments'
+g++ -Wall -I/usr/include/g++    -c payRecord.cc -o payRecord.o
+----------------------------------------------------------------------------
+....I am working on linking files with BASE_NAME payments
+----------------------------------------------------------------------------
+ld -o paymentsAll.o -r payRecord.o; chmod a-x paymentsAll.o
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Common/Payments'
+cd ./../Common/Utils; gmake -j 1 
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Common/Utils'
+gmake[2]: Nothing to be done for `objects'.
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Common/Utils'
+cd ./../Common/RandomGenerator; gmake -j 1 
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Common/RandomGenerator'
+../../makefile.body:39: Depend/randomGenerator.d: No such file or directory
+/bin/sh -ec 'cc -M randomGenerator.cc | sed "s!randomGenerator.o!& Depend/randomGenerator.d!g" > Depend/randomGenerator.d'
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Common/RandomGenerator'
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Common/RandomGenerator'
+g++ -Wall -I/usr/include/g++    -c randomGenerator.cc -o randomGenerator.o
+----------------------------------------------------------------------------
+....I am working on linking files with BASE_NAME randomGenerator
+----------------------------------------------------------------------------
+ld -o randomGeneratorAll.o -r randomGenerator.o; chmod a-x randomGeneratorAll.o
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Common/RandomGenerator'
+cd ./../Common/GMessage; gmake -j 1 
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Common/GMessage'
+gmake[2]: Nothing to be done for `objects'.
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Common/GMessage'
+cd ./../Common/MessageQueue; gmake -j 1 
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Common/MessageQueue'
+gmake[2]: Nothing to be done for `objects'.
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Common/MessageQueue'
+cd ./../Common/Shutdownable; gmake -j 1 
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Common/Shutdownable'
+gmake[2]: Nothing to be done for `objects'.
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Common/Shutdownable'
+cd ./../Common/Killer; gmake -j 1 
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Common/Killer'
+gmake[2]: Nothing to be done for `objects'.
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Common/Killer'
+cd ./../Common/ConfigFile; gmake -j 1 
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Common/ConfigFile'
+gmake[2]: Nothing to be done for `objects'.
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Common/ConfigFile'
+cd ./../Common/LogFile; gmake -j 1 
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Common/LogFile'
+gmake[2]: Nothing to be done for `objects'.
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Common/LogFile'
+cd ./../Common/Semaphore; gmake -j 1 
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Common/Semaphore'
+gmake[2]: Nothing to be done for `objects'.
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Common/Semaphore'
+cd ./../Common/Sender; gmake -j 1 
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Common/Sender'
+gmake[2]: Nothing to be done for `objects'.
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Common/Sender'
+cd ./../Common/Receiver; gmake -j 1 
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Common/Receiver'
+gmake[2]: Nothing to be done for `objects'.
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Common/Receiver'
+cd ./../Common/Runable; gmake -j 1 
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Common/Runable'
+gmake[2]: Nothing to be done for `objects'.
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Common/Runable'
+cd ./../Common/RunningObject; gmake -j 1 
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Common/RunningObject'
+gmake[2]: Nothing to be done for `objects'.
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Common/RunningObject'
+cd ./../Common/TransactionManager; gmake -j 1 
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Common/TransactionManager'
+../../makefile.body:39: Depend/transactionManager.d: No such file or directory
+/bin/sh -ec 'cc -M transactionManager.cc | sed "s!transactionManager.o!& Depend/transactionManager.d!g" > Depend/transactionManager.d'
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Common/TransactionManager'
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Common/TransactionManager'
+g++ -Wall -I/usr/include/g++    -c transactionManager.cc -o transactionManager.o
+----------------------------------------------------------------------------
+....I am working on linking files with BASE_NAME transactionManager
+----------------------------------------------------------------------------
+ld -o transactionManagerAll.o -r transactionManager.o; chmod a-x transactionManagerAll.o
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Common/TransactionManager'
+cd ./../Common/UidGenerator; gmake -j 1 
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Common/UidGenerator'
+../../makefile.body:39: Depend/uidGenerator.d: No such file or directory
+/bin/sh -ec 'cc -M uidGenerator.cc | sed "s!uidGenerator.o!& Depend/uidGenerator.d!g" > Depend/uidGenerator.d'
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Common/UidGenerator'
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Common/UidGenerator'
+g++ -Wall -I/usr/include/g++    -c uidGenerator.cc -o uidGenerator.o
+----------------------------------------------------------------------------
+....I am working on linking files with BASE_NAME uidGenerator
+----------------------------------------------------------------------------
+ld -o uidGeneratorAll.o -r uidGenerator.o; chmod a-x uidGeneratorAll.o
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Common/UidGenerator'
+----------------------------------------------------------------------------
+======================== I am creating Eso NOW !!! =========================
+----------------------------------------------------------------------------
+g++  -o eso main.cc Banker/bankerAll.o Eso/esoAll.o Majordomo/majordomoAll.o ../Six/Six/sixAll.o ../Six/SixMajordomo/sixMajordomoAll.o ../Six/SixOffspring/sixOffspringAll.o ../Common/ACManager/acManagerAll.o ../Common/Cipherer/ciphererAll.o ../Common/ConfigFile/configFileAll.o ../Common/Debugable/debugableAll.o ../Common/GMessage/gMessageAll.o ../Common/Killer/killerAll.o ../Common/LogFile/logFileAll.o ../Common/MessageQueue/messageQueueAll.o ../Common/Payments/paymentsAll.o ../Common/RandomGenerator/randomGeneratorAll.o ../Common/Receiver/receiverAll.o ../Common/Runable/runableAll.o ../Common/RunningObject/runningObjectAll.o ../Common/Semaphore/semaphoreAll.o ../Common/Sender/senderAll.o ../Common/Shutdownable/shutdownableAll.o ../Common/TransactionManager/transactionManagerAll.o ../Common/UidGenerator/uidGeneratorAll.o ../Common/Utils/utilsAll.o Finder/finderAll.o Allocator/allocatorAll.o TCBWrapper/tcbWrapperAll.o TimeSynchronizer/timesynchAll.o Scheduler/schedulerAll.o \
+  -L/home/eternity/Source/Common/RSAEuro \
+          -lstdc++ -lm  -lrsaeuro  -lc_r
+main.cc: In function `int main(int, char **)':
+main.cc:27: warning: implicit declaration of function `int getopt(...)'
+/usr/lib/libc.so: warning: this program uses gets(), which is unsafe.
+/usr/lib/libc.so: WARNING!  setkey(3) not present in the system!
+/usr/lib/libc.so: WARNING!  des_setkey(3) not present in the system!
+/usr/lib/libc.so: WARNING!  encrypt(3) not present in the system!
+/usr/lib/libc.so: WARNING!  des_cipher(3) not present in the system!
+/usr/lib/libc.so: warning: this program uses f_prealloc(), which is stupid.
+----------------------------------------------------------------------------
+=============================== Eso done !!! ===============================
+----------------------------------------------------------------------------
+gmake[1]: Leaving directory `/home/eternity/public_html/Source/Eso'
+:
+cd ./Client; gmake -j 1
+gmake[1]: Entering directory `/home/eternity/public_html/Source/Client'
+cd ./Majordomo; gmake -j 1 
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Client/Majordomo'
+../../makefile.body:39: Depend/cliMajordomo.d: No such file or directory
+../../makefile.body:39: Depend/cliAcMgrMethods.d: No such file or directory
+../../makefile.body:39: Depend/cliKeyGeneration.d: No such file or directory
+../../makefile.body:39: Depend/cliCommands.d: No such file or directory
+../../makefile.body:39: Depend/cliServiceCmds.d: No such file or directory
+../../makefile.body:39: Depend/cliTestMethods.d: No such file or directory
+../../makefile.body:39: Depend/cliDownload.d: No such file or directory
+../../makefile.body:39: Depend/cliUpload.d: No such file or directory
+/bin/sh -ec 'cc -M cliUpload.cc | sed "s!cliUpload.o!& Depend/cliUpload.d!g" > Depend/cliUpload.d'
+/bin/sh -ec 'cc -M cliDownload.cc | sed "s!cliDownload.o!& Depend/cliDownload.d!g" > Depend/cliDownload.d'
+/bin/sh -ec 'cc -M cliTestMethods.cc | sed "s!cliTestMethods.o!& Depend/cliTestMethods.d!g" > Depend/cliTestMethods.d'
+/bin/sh -ec 'cc -M cliServiceCmds.cc | sed "s!cliServiceCmds.o!& Depend/cliServiceCmds.d!g" > Depend/cliServiceCmds.d'
+/bin/sh -ec 'cc -M cliCommands.cc | sed "s!cliCommands.o!& Depend/cliCommands.d!g" > Depend/cliCommands.d'
+/bin/sh -ec 'cc -M cliKeyGeneration.cc | sed "s!cliKeyGeneration.o!& Depend/cliKeyGeneration.d!g" > Depend/cliKeyGeneration.d'
+/bin/sh -ec 'cc -M cliAcMgrMethods.cc | sed "s!cliAcMgrMethods.o!& Depend/cliAcMgrMethods.d!g" > Depend/cliAcMgrMethods.d'
+/bin/sh -ec 'cc -M cliMajordomo.cc | sed "s!cliMajordomo.o!& Depend/cliMajordomo.d!g" > Depend/cliMajordomo.d'
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Client/Majordomo'
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Client/Majordomo'
+g++ -Wall -I/usr/include/g++    -c cliMajordomo.cc -o cliMajordomo.o
+g++ -Wall -I/usr/include/g++    -c cliAcMgrMethods.cc -o cliAcMgrMethods.o
+g++ -Wall -I/usr/include/g++    -c cliKeyGeneration.cc -o cliKeyGeneration.o
+g++ -Wall -I/usr/include/g++    -c cliCommands.cc -o cliCommands.o
+g++ -Wall -I/usr/include/g++    -c cliServiceCmds.cc -o cliServiceCmds.o
+g++ -Wall -I/usr/include/g++    -c cliTestMethods.cc -o cliTestMethods.o
+g++ -Wall -I/usr/include/g++    -c cliDownload.cc -o cliDownload.o
+cliDownload.cc: In method `void Majordomo::WaitForAnswersToReqForHeaders()':
+cliDownload.cc:452: warning: value computed is not used
+cliDownload.cc: In method `void Majordomo::WaitForAnswersToReqForFile()':
+cliDownload.cc:497: warning: value computed is not used
+g++ -Wall -I/usr/include/g++    -c cliUpload.cc -o cliUpload.o
+cliUpload.cc: In method `void Majordomo::WaitForAnswersToReqForStor(int)':
+cliUpload.cc:343: warning: value computed is not used
+cliUpload.cc: In method `void Majordomo::WaitForAnswersToFileToStor(int)':
+cliUpload.cc:449: warning: value computed is not used
+----------------------------------------------------------------------------
+....I am working on linking files with BASE_NAME majordomo
+----------------------------------------------------------------------------
+ld -o majordomoAll.o -r cliMajordomo.o cliAcMgrMethods.o cliKeyGeneration.o cliCommands.o cliServiceCmds.o cliTestMethods.o cliDownload.o cliUpload.o; chmod a-x majordomoAll.o
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Client/Majordomo'
+cd ./Client; gmake -j 1 
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Client/Client'
+../../makefile.body:39: Depend/client.d: No such file or directory
+/bin/sh -ec 'cc -M client.cc | sed "s!client.o!& Depend/client.d!g" > Depend/client.d'
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Client/Client'
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Client/Client'
+g++ -Wall -I/usr/include/g++    -c client.cc -o client.o
+----------------------------------------------------------------------------
+....I am working on linking files with BASE_NAME client
+----------------------------------------------------------------------------
+ld -o clientAll.o -r client.o; chmod a-x clientAll.o
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Client/Client'
+cd ./Banker; gmake -j 1 
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Client/Banker'
+../../makefile.body:39: Depend/banker.d: No such file or directory
+../../makefile.body:39: Depend/bankAux.d: No such file or directory
+/bin/sh -ec 'cc -M bankAux.cc | sed "s!bankAux.o!& Depend/bankAux.d!g" > Depend/bankAux.d'
+/bin/sh -ec 'cc -M banker.cc | sed "s!banker.o!& Depend/banker.d!g" > Depend/banker.d'
+gmake[2]: Leaving directory `/home/eternity/public_html/Source/Client/Banker'
+gmake[2]: Entering directory `/home/eternity/public_html/Source/Client/Banker'
+g++ -Wall -I/usr/include/g++    -c banker.cc -o banker.o

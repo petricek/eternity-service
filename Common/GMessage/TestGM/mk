@@ -1,0 +1,6 @@
+g++ -Wall -g \
+./pechy.cc \
+./../../Debugable/debugableAll.o \
+./../../LogFile/logFileAll.o \
+./../../GMessage/gMessageAll.o \
+-o testGM

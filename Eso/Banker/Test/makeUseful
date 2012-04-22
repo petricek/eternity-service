@@ -1,0 +1,23 @@
+cd ./../../../Common/Debugable
+gmake
+
+cd ./../LogFile
+gmake
+
+cd ./../GMessage
+gmake
+
+cd ./../Payments
+gmake
+
+cd ./../RandomGenerator
+gmake
+
+cd ./../Utils
+gmake
+
+cd ./../../Eso/UidGenerator
+gmake
+
+cd ./../Banker
+gmake

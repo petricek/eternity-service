@@ -1,0 +1,3 @@
+gmake 
+./mix &
+less mix.log

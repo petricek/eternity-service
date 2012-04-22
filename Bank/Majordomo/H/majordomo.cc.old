@@ -1,0 +1,46 @@
+//*************************************************************************
+// 
+// File: majordomo.h
+// Name: Majordomo
+// Author: Venca
+// Last Modified: 23.2.1999 I
+// 
+// Description:
+// Processes various requests comming from network and from SIX
+// also distributes messages to apropriate objects
+//
+//*************************************************************************
+
+#ifndef BANK_MAJORDOMO_H
+#define BANK_MAJORDOMO_H
+
+//#include <.h>
+#include "./../../../Common/H/common.h"
+#include "./../../../Common/H/commands.h"
+#include "./../../../Common/H/labels.h"
+#include "./../../../Common/Runable/H/runable.h"
+#include "./../../../Common/GMessage/H/gMessage.h"
+#include "./../../../Six/SixMajordomo/H/sixMajordomo.h"
+//#include "../../BankOffspring/H/bankOffspring.h"
+
+//-------------------------------------------------------------------------
+// Majordomo
+// ~~~~~~~~~
+// 
+//-------------------------------------------------------------------------
+class Majordomo : public SixOffspring
+{
+    // methods
+  protected:
+   //------------------------------------------------------
+   ///functions for commands from Service
+    ///initializing switch
+  virtual Err SwitchDataReceivedCommand(const Char     *command, 
+                                        const MsgField *dataFld,
+                                        const ACID      acid);
+  public:
+    Majordomo(Bank * parent, LogFile * majordomoLogFile);
+    virtual void * Run(void *);
+
+};
+#endif

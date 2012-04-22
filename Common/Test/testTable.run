@@ -1,0 +1,17 @@
+rm testTable.log testTable.tab testTable.o
+./testTable
+vi testTable.log
+echo "count of File::File"
+cat testTable.log | grep -c ::File
+echo "count of File::~File"
+cat testTable.log | grep -c ::~File
+echo "count of File::File(testTable.tab)"
+cat testTable.log | grep -c "::File(testTable.tab)"
+echo "count of File::~File(testTable.tab)"
+cat testTable.log | grep -c "::~File(testTable.tab)"
+echo "count of File::File(testTable.tab)"
+cat testTable.log | grep -c "::File(testTable.tab~)"
+echo "count of File::~File(testTable.tab)"
+cat testTable.log | grep -c "::~File(testTable.tab~)"
+echo "count of File::Rename"
+cat testTable.log | grep -c "File::Rename"

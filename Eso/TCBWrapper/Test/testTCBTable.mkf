@@ -1,0 +1,13 @@
+CXXFLAGS= -g -Wall
+
+testTCBTable: testTCBTable.o ../tcbTable.o
+	g++ -g -Wall -o testTCBTable testTCBTable.o \
+	../*.cc \
+	../../../Common/Cipherer/*.cc \
+	../../../Common/LogFile/*.cc \
+	../../../Common/Debugable/*.cc \
+	../../../Common/GMessage/*.cc \
+	../../../Common/RSAEuro/librsaeuro.a
+
+clean:
+	rm testTCBTable.o

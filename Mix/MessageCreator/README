@@ -1,0 +1,24 @@
+**********************************************************************
+This is a README file for project Eternity Service. The source code 
+for Eternity Service project can be freely distributed under the GNU
+licence.
+
+(c) EternitySociety :-)
+**********************************************************************
+
+Kdyz zadam o certifikaty mixu, pouzivam tam ``hopCount + 1''. Ta `` + 1''
+  tam je proto, ze kdyz ja nabaluji cibuli, v te spodni vrstve je i dvakrat
+  certifikat koncoveho Mixu a ja si tak vyhradim prostor a misto prvni
+  dvojice vracenych certifu tam strcim vlastni certif jako 
+  Mix-Certificate-1-1 a Mix-Certificate-1-2. Nemusim tak brat jako 
+  specialni pripad dolni vrstvu cibule a splachnu to vsechno v cyklu.
+
+Myslenka za vytvarenim onionu: kdyz delam novou (nevrstvim na jiz hotovou,
+  tedy zpatecni, cibuli), tak vytvorim spodek (Final-Stop atd). Tento
+  spodek jiz mohu brat, jako bych dostal zpatecni onion.
+
+Jediny problem je v tom, ze kdyz dostanu zpatecni onion, tak do nej dam
+  jeste polozku symetrickeho klice na sifrovani dat. Na spodku onionu ale
+  jiz toto nepotrebuji. Takze to tam necham, ale budu to dole ignorovat. 
+  Davam to tam jen proto, ze to mohu zobecnit a nemusim nekde duplikovat
+  kod.

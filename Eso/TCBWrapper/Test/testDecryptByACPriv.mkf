@@ -1,0 +1,14 @@
+CXXFLAGS= -g -Wall
+
+testDecryptByACPriv: testDecryptByACPriv.o ../tcbWrapperAll.o
+	g++ -g -Wall -o testDecryptByACPriv testDecryptByACPriv.o \
+	../*.cc \
+	../../../Common/Cipherer/*.cc \
+	../../../Common/LogFile/*.cc \
+	../../../Common/Debugable/*.cc \
+	../../../Common/GMessage/*.cc \
+	../../../Common/RandomGenerator/*.cc \
+	../../../Common/RSAEuro/librsaeuro.a
+
+clean:
+	rm testDecryptByACPriv.o

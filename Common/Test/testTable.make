@@ -1,0 +1,1 @@
+gmake -f testTable.mkf

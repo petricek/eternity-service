@@ -1,0 +1,39 @@
+# 
+# makefile.body
+#
+# generic makefile for body of all ,,executable'' makefiles, this 
+# makefile is included by all these makefiles
+#
+# this makefile needs variables SOURCES and BASE_NAME to be *defined* 
+# before (in a makefile that includes this makefile), it is up to 
+# makefiles in particular directory to do so
+#
+# WARNING !!! - do *NOT* update or Pechy gets angry ...
+#
+
+.PHONY:	objects clean 
+objects:	$(SOURCES:.cc=.o) $(BASE_NAME)All.o
+
+SEP=----------------------------------------------------------------------------
+
+$(BASE_NAME)All.o:	$(SOURCES:.cc=.o)	
+	@echo $(SEP) 
+	@echo ....I am working on linking files with BASE_NAME $(BASE_NAME)
+	@echo $(SEP) 
+	-ld -o $(@) -r $(^); chmod a-x $(@)
+#-rm $(SOURCES:.cc=.o)
+#-touch $(SOURCES:.cc=.o)
+#-touch $(BASE_NAME)All.o
+	
+clean:	
+	-find . -name '*.o' -exec rm {} \;
+	-find . -name '*.d' -exec rm {} \;
+	-find . -name '*.core' -exec rm {} \;
+
+# pattern rule for regenerating files of dependencies - 
+# you are gonna love it...
+./Depend/%.d:	%.cc
+	$(SHELL) -ec '$(CC) -M $(<) | sed "s!$*.o!& $(@)!g" > $(@)'
+
+# including files of dependencies
+include $(addprefix ./Depend/, $(SOURCES:.cc=.d))

@@ -1,0 +1,2 @@
+cd ../../../Common
+gmake -f Makefile2

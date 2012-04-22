@@ -1,0 +1,14 @@
+CXXFLAGS= -g -Wall
+
+testKeywords: testKeywords.o ../tcbWrapperAll.o
+	g++ -g -Wall -o testKeywords testKeywords.o \
+	../*All.o \
+	../../../Common/Cipherer/*All.o \
+	../../../Common/LogFile/*All.o \
+	../../../Common/Debugable/*All.o \
+	../../../Common/GMessage/*All.o \
+	../../../Common/RandomGenerator/*All.o \
+	../../../Common/RSAEuro/librsaeuro.a
+
+clean:
+	rm testKeywords.o

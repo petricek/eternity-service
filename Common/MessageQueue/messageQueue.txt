@@ -1,0 +1,34 @@
+Nìco k frontì
+=============
+
+QUEUE_BUFFER definuje délku fronty.
+
+  V konstruktoru se dá jako parametr velikost fronty, jinak je defaultnì 
+právì QUEUE_BUFFER.
+
+  Fronta je používaná v multithreadovém prostøedí, takže je nutný
+zámek pro vzájemné vylouèení. Dále klasicky používá dva semafory. V
+semFull je poèet zpráv, které je právì ve frontì. SemEmpty je poèet
+volných míst ve frontì.
+
+  Semafory používáme z knihovny, kterou jsme stáhli ze sítì,
+implementují je pomocí condition variables a zámkù. Zámky jsou
+normálnì ve standardní implementaci vláken FreeBSD.
+
+  V konstruktoru se též vytvoøí pole ukazatelù na typ Message. To mùže
+být cokoli, fronta dovnitø nehrabe.
+
+  Fronta si také samozøejmì udržuje index první položky a index
+položky poslední.
+
+  V append() se zvedne semFull, pak se zamkne kritická sekce, zpráva
+se pøidá do fronty, odemkne se, položí se semafor semEmpty. If je
+request SOFT, kontroluje se nejdøíve, zda fronta není plná, v takovém
+pøípadì se vrací hodnota MSGQ_FULL. Je to kvùli tomu, že nechceme, aby
+se Mix dostal do deadlocku. Tímto mechanismem mùžeme v nejhorším
+zahazovat zprávy, které by jinak mohli zablokovat Mix.
+
+  Pøi pøidávání zpráv se postupuje tak, že se zjistí, odkud se brala
+zpráva a zprávy se pøisunou k sobì (zlikvidují prázdné místo) z té
+strany, kde se bude dìlat ménì pøesunù. Tedy implementace je dost
+jednoduchá, ale zato funkèní.

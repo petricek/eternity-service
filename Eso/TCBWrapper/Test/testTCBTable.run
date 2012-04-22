@@ -1,0 +1,5 @@
+rm testTCBTable.log testTCBTable.o
+./testTCBTable
+echo "<ENTER> a ukazu ti log ..."
+read LN
+vim testTCBTable.log

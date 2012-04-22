@@ -1,0 +1,11 @@
+CXXFLAGS= -g -Wall
+
+testGMessage: testGMessage.o
+	g++ -g -Wall -o testGMessage testGMessage.o \
+	../LogFile/logFile.o \
+	../Debugable/debugable.o \
+	../GMessage/gMessageAll.o \
+	../RSAEuro/librsaeuro.a
+
+clean:
+	rm testGMessage.o

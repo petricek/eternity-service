@@ -1,0 +1,5 @@
+rm Allocator/*
+rm Allocator/Files/*
+./allocator
+cat Allocator/*log
+ls -l Allocator/Files

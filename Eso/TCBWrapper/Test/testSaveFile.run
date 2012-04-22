@@ -1,0 +1,11 @@
+echo "Clearing all..."
+./clearAll
+echo "Generating TCB keys..."
+./genTCBKeys
+echo "Preparing test..."
+./prepSaveFile
+echo "Testing SaveFile()..."
+./testSaveFile
+echo "Press <ENTER> to see log"
+read
+vi testSaveFile.log

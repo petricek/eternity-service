@@ -1,0 +1,18 @@
+testQueue.cc
+------------
+
+Je to priklad na testovani fronty. Vytvori se 3 vlakna (1 z nich je
+  main). 2 davaji do fronty, 3. bere. Ty dve si vzdy hodi minci, jak tam
+  pridaji (HARD, SOFT). 3. vlakno (main) si hazi minci, zda odebere z
+  fronty nebo ne. Tak je nasimulovano, ze se vyzkousi uspavani, SOFT
+  odebirani (kdyz je fronta plna atd).
+
+V compileTestQueue.txt je prikaz, jak to prelozit.
+
+Vyuziva se normalne logFile, takze hlasky jsou vsechny do mix.log.
+
+Predpoklada se, ze ten prikaz pro prelozeni se bude spoustet z 
+  $HOME_SOURCE/Mix/Common/Test adresare.
+
+Pechy, 21.11.1998
+----------------------------------------------------------------------------

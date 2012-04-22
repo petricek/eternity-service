@@ -1,0 +1,12 @@
+**********************************************************************
+This is a README file for project Eternity Service. The source code 
+for Eternity Service project can be freely distributed under the GNU
+licence.
+
+(c) EternitySociety :-)
+**********************************************************************
+
+Kontroluje jestli jsou v prijatem chunku vsechna pole:
+
+Debug, Protocol-Version, Recipient, Path, Data a prida X-Origin
+
