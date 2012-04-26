@@ -29,7 +29,7 @@
  * @see     other cryptography methods.
  */
 GMessage *Cipherer::ReturnGMsgFullOfSymKeys(Size hopCount, 
-                                            GMessage *parameters = NULL)
+                                            GMessage *parameters)
 {
     // to shut up a warning message
   parameters = NULL;

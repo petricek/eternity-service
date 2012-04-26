@@ -43,7 +43,7 @@ class KeyManager: public Debugable
   /**@name methods */
   /*@{*/
     /// Constructor
-    KeyManager::KeyManager(ConfigFile *configFile, 
+    KeyManager(ConfigFile *configFile, 
                            LogFile * keyManagerLogFile,
                            Cipherer *cipherer,
                            MessageQueue *messageQueue);

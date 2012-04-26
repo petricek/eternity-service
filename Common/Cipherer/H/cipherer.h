@@ -51,6 +51,7 @@ class Cipherer:public Debugable
   /**@name methods */
   /*@{*/
     Cipherer(LogFile * ciphererLogFile);
+    ~Cipherer();
 
       /**
        * General methods for asymetric encryption and decription,

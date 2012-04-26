@@ -72,6 +72,8 @@ class CertificateRepository : public Debugable
     void DeleteCertificates();
       /// Delete certificates in certificates directory
     Err ClearDirectory(string dir);
+    ~CertificateRepository();
+
   /*@}*/
 };
 #endif

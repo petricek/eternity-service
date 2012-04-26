@@ -25,6 +25,7 @@ class SignalManager: public Runable
   /*@{*/
     /// Constructor
     SignalManager(LogFile * signalManagerLogFile);
+    ~SignalManager();
     /// Main thread method
     void * Run(void *);
   /*@}*/

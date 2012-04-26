@@ -25,7 +25,7 @@
  * @author  Pechy
  * @see     other crypthographic methods
  */
-GMessage *Cipherer::GenerateSymetricKey(GMessage *parameters = NULL)
+GMessage *Cipherer::GenerateSymetricKey(GMessage *parameters)
 {
     // to shut up a warning message
   parameters = NULL;
@@ -75,7 +75,7 @@ GMessage *Cipherer::GenerateSymetricKey(GMessage *parameters = NULL)
  * @author  Pechy
  * @see     other crypthographic methods
  */
-GMessage *Cipherer::GenerateAsymetricKey(GMessage *parameters = NULL)
+GMessage *Cipherer::GenerateAsymetricKey(GMessage *parameters)
 {
     // to shut up a warning message
   parameters = NULL;

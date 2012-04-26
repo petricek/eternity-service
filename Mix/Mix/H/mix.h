@@ -113,7 +113,7 @@ class Mix
     Mix(string configName = MIX_CONFIG_FILE);
     virtual ~Mix();
     virtual void Run(void);
-    InitializeRandomGenerator();
+    Err InitializeRandomGenerator();
   /*@}*/
 
   private:

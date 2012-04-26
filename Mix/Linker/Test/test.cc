@@ -204,7 +204,7 @@ GMessage * StoreChunk(GMessage * chunk,LogFile * logFile)
 //-------------------------------------------------------------------------
 PartialMessage::PartialMessage(Size msgSize,Size numOfChunks)
 {
-  presentChunks = new (ChunkData *)[numOfChunks];
+  presentChunks = new ChunkData *[numOfChunks];
   for(int i= numOfChunks; i > 0;i--)
   {
     presentChunks[i-1] = new ChunkData;

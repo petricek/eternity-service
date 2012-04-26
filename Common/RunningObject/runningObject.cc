@@ -10,7 +10,7 @@
 
 RunningObject::RunningObject()
 {
-  runningObjectID = new (RunningObjectID)[MAX_RUNNING_OBJECTS];
+  runningObjectID = new RunningObjectID[MAX_RUNNING_OBJECTS];
 }
 
 RunningObject::~RunningObject()

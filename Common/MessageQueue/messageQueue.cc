@@ -18,7 +18,7 @@ MessageQueue::MessageQueue(LogFile * queueLogFile, Size size)
   WriteString(llDebug, __FILE__ ":%d:MessageQueue() constructor,"
                        " size=%d.", __LINE__, size);
   this->size = size;
-  messages = new (GMessage*)[size];
+  messages = new GMessage*[size];
 
     // initializing the two needed semaphores
   semaphore_init(&semFull, 0);
@@ -62,7 +62,7 @@ MessageQueue::~MessageQueue()
  * @see     
  */
 Err
-MessageQueue::Append(GMessage *msg, int requestType = HARD)
+MessageQueue::Append(GMessage *msg, int requestType)
 {
 
     // sem_down MUST be BEFORE mutex_lock !!!!

@@ -1,4 +1,5 @@
 #include "./H/myString.h"
+#include <cstring>
 
 /**
  * Safe strlen().

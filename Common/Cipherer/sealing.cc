@@ -26,7 +26,7 @@
 Err 
 Cipherer::Seal(GMessage *privateKeyInfo, GMessage *publicKeyInfo,
                    MsgField *dataIn, MsgField **dataOut,
-		   GMessage *parameters = NULL)
+		   GMessage *parameters)
 {
     // to shut up a warning message
   parameters = NULL;

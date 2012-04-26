@@ -8,6 +8,8 @@
 
 #include "./H/cipherer.h"
 #include "../H/labels.h"
+#include <assert.h>
+
 
 /**
  * Encrypts data with private key.

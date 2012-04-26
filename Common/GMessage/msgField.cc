@@ -795,8 +795,7 @@ Err FileMsgField::GetAsFile(Char *aFileName)
 
   if((currFile = OpenFile("rb")) == NULL)
   {
-    WriteString(llError, "FileMsgField::GetAsFile(): cannot create source File
-    object");
+    WriteString(llError, "FileMsgField::GetAsFile(): cannot create source File object");
     return KO;
   }
   if((newFile = new File(aFileName, "wb", logFile)) == NULL)

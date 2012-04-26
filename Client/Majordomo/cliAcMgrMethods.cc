@@ -39,7 +39,7 @@ Majordomo::GetPtrToACManager(Char *)
  * @see     SixMajordomo
  */
 Queue *
-Majordomo::GetACs(Char *type, const int count = 1, Queue *notIn = NULL)
+Majordomo::GetACs(Char *type, const int count = 1, Queue *notIn)
 {
 DBG;
 

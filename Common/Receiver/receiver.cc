@@ -173,7 +173,7 @@ void *Receiver::Run( void *)
      // __LINE__);
 
     int acceptedSock;
-    int sinSize = sizeof(struct sockaddr_in);
+    socklen_t sinSize = sizeof(struct sockaddr_in);
     struct sockaddr_in incomingAddr;
     if ((acceptedSock = accept(sock, (struct sockaddr *) &incomingAddr, 
 	                       &sinSize)) == -1) {

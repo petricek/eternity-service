@@ -1,5 +1,6 @@
   // has to be the FIRST include !
 #include "./../H/common.h"
+#include <string.h> // memcpy
 
 #include "./H/mem.h"
 /**

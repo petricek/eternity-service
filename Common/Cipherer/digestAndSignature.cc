@@ -23,7 +23,7 @@
  */
 Err 
 Cipherer::MessageDigest(MsgField *dataToDigest, MsgField **dig, 
-                            GMessage *parameters = NULL)
+                            GMessage *parameters)
 {
   parameters = NULL;
 
@@ -77,7 +77,7 @@ Cipherer::MessageDigest(MsgField *dataToDigest, MsgField **dig,
  */
 Err
 Cipherer::Sign(GMessage *privKeyGM, MsgField *dataToSign, 
-                   MsgField **sig, GMessage *parameters = NULL)
+                   MsgField **sig, GMessage *parameters)
 {
   parameters = NULL;
 
@@ -135,7 +135,7 @@ Cipherer::Sign(GMessage *privKeyGM, MsgField *dataToSign,
  */
 Err 
 Cipherer::VerifySignature(GMessage *pubKeyGM, MsgField *dataToVerify, 
-                              MsgField *sig, GMessage *parameters = NULL)
+                              MsgField *sig, GMessage *parameters)
 {
   parameters = NULL;
 

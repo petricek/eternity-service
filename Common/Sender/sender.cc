@@ -36,7 +36,7 @@
 Sender::Sender(LogFile * senderLogFile, 
                Killer * killer, 
                MessageQueue * toSenderQueue,
-	       string origin, string IP = "", unsigned short port = 0)
+	       string origin, string IP, unsigned short port)
   :Runable(senderLogFile), Shutdownable(killer)
 {
   this->toSenderQueue = toSenderQueue;

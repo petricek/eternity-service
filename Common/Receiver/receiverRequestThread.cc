@@ -87,8 +87,7 @@ void Receiver::RequestServant(int sockIn)
 		    */
       }
       else {
-        WriteString(llWarning, __FILE__ ":%d:Recv() in thread sock=%d
-                    failed, %s, exitting from thread.", __LINE__, sockIn, 
+        WriteString(llWarning, __FILE__ ":%d:Recv() in thread sock=%d failed, %s, exitting from thread.", __LINE__, sockIn, 
                     strerror(Errno));
 	if (bufWhole)
 	  DELETE(bufWhole);

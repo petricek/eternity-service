@@ -1,7 +1,12 @@
 #ifndef COMMON_H
 #define COMMON_H
 
+using namespace std;
+
+typedef unsigned short          u_short;
+
 #include <stdio.h>
+#include <stdint.h>
 
   // *NEEDED* !!! when we use errno in threads, it is needed to use a
   // special makro errno instead of normal variable errno (all
